@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Composio 100-App Research</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #08111f;
+    color: #eef5ff;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 24px;
+}
+
+.hero {
+    padding: 90px 24px;
+    background: #0d1b2e;
+}
+
+h1 {
+    font-size: 64px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.subtitle {
+    color: #a9bbcf;
+    font-size: 20px;
+    max-width: 800px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.card, .panel {
+    background: #102238;
+    border: 1px solid #223b58;
+    border-radius: 14px;
+    padding: 22px;
+}
+
+.big {
+    font-size: 38px;
+    font-weight: bold;
+    color: #63b3ff;
+}
+
+.statrow {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0;
+    border-bottom: 1px solid #223b58;
+    color: #b8c8d9;
+}
+
+.statrow b {
+    color: white;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section {
+    padding: 60px 0;
+    border-top: 1px solid #1d334c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+th {
+    background: #162c45;
+    padding: 12px;
+    text-align: left;
+    position: sticky;
+    top: 0;
+}
+
+td {
+    padding: 11px;
+    border-bottom: 1px solid #223b58;
+    vertical-align: top;
+    color: #c8d6e5;
+}
+
+a {
+    color: #63b3ff;
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+input, select {
+    background: #102238;
+    color: white;
+    border: 1px solid #34506e;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+input {
+    width: 320px;
+}
+
+.table {
+    overflow: auto;
+    max-height: 700px;
+    border: 1px solid #223b58;
+    border-radius: 12px;
+}
+
+.note {
+    background: #16283b;
+    border-left: 4px solid #ffd166;
+    padding: 18px;
+}
+
+@media(max-width:800px) {
+    .grid, .two {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+}
+
+@media(max-width:500px) {
+    .grid, .two {
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<div class="container">
+<div>COMPOSIO TAKE-HOME · RESEARCH + AUTOMATION</div>
+<h1>100 Apps.<br>One Integration Map.</h1>
+<p class="subtitle">
+A systematic research pipeline covering authentication, access models,
+API surfaces, MCP availability, buildability constraints and evidence
+across 100 applications in 10 categories.
+</p>
+</div>
+</div>
+
+<section>
+<div class="container">
+<h2>Executive Summary</h2>
+
+<div class="grid">
+<div class="card">
+<div class="big">100</div>
+Apps researched
+</div>
+
+<div class="card">
+<div class="big">10</div>
+Categories
+</div>
+
+<div class="card">
+<div class="big">100%</div>
+Research records completed
+</div>
+
+<div class="card">
+<div class="big">20</div>
+Verification sample
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Research Coverage</h2>
+<div class="grid">
+
+    <div class="card">
+        <div class="big">10</div>
+        <div>AI &amp; Knowledge Tools</div>
+    </div>
+    
+    <div class="card">
+        <div class="big">10</div>
+        <div>CRM</div>
+    </div>
+    
+    <div class="card">
+        <div class="big">10</div>
+        <div>Communication</div>
+    </div>
+    
+    <div class="card">
+        <div class="big">10</div>
+        <div>Customer Support</div>
+    </div>
+    
+    <div class="card">
+        <div class="big">10</div>
+        <div>Developer &amp; Infrastructure</div>
+    </div>
+    
+    <div class="card">
+        <div class="big">10</div>
+        <div>E-commerce</div>
+    </div>
+    
+    <div class="card">
+        <div class="big">10</div>
+        <div>Finance &amp; Payments</div>
+    </div>
+    
+    <div class="card">
+        <div class="big">10</div>
+        <div>Marketing &amp; Advertising</div>
+    </div>
+    
+    <div class="card">
+        <div class="big">10</div>
+        <div>Productivity &amp; Project Management</div>
+    </div>
+    
+    <div class="card">
+        <div class="big">10</div>
+        <div>Web Data &amp; Scraping</div>
+    </div>
+    
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>What the Data Shows</h2>
+
+<div class="two">
+
+<div class="panel">
+<h3>Access Model</h3>
+<div class='statrow'><span>Unknown</span><b>25</b></div><div class='statrow'><span>Self-serve free</span><b>43</b></div><div class='statrow'><span>Paid plan required</span><b>14</b></div><div class='statrow'><span>Self-serve trial</span><b>8</b></div><div class='statrow'><span>Enterprise only</span><b>5</b></div><div class='statrow'><span>Admin approval</span><b>2</b></div><div class='statrow'><span>Partner approval</span><b>2</b></div><div class='statrow'><span>Contact sales</span><b>1</b></div>
+</div>
+
+<div class="panel">
+<h3>Authentication</h3>
+<div class='statrow'><span>OAuth2</span><b>18</b></div><div class='statrow'><span>OAuth 2.0</span><b>28</b></div><div class='statrow'><span>API key</span><b>39</b></div><div class='statrow'><span>Bearer Token</span><b>21</b></div><div class='statrow'><span>Bearer</span><b>24</b></div><div class='statrow'><span>Basic Auth</span><b>9</b></div><div class='statrow'><span>Unknown</span><b>18</b></div><div class='statrow'><span>JWT</span><b>3</b></div><div class='statrow'><span>HMAC</span><b>1</b></div>
+</div>
+
+<div class="panel">
+<h3>API Surface</h3>
+<div class='statrow'><span>REST</span><b>88</b></div><div class='statrow'><span>CLI</span><b>44</b></div><div class='statrow'><span>MCP</span><b>99</b></div><div class='statrow'><span>GraphQL</span><b>16</b></div><div class='statrow'><span>SDK</span><b>54</b></div><div class='statrow'><span>webhook</span><b>55</b></div>
+</div>
+
+<div class="panel">
+<h3>MCP Classification</h3>
+<div class='statrow'><span>Yes</span><b>24</b></div><div class='statrow'><span>Unknown</span><b>61</b></div><div class='statrow'><span>No</span><b>15</b></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Cross-App Findings</h2>
+
+<div class="two">
+
+<div class="panel">
+<h3>Authentication is fragmented</h3>
+<p>
+OAuth, API keys, bearer tokens and vendor-specific schemes appear
+across the ecosystem. Integration logic therefore needs
+authentication-aware handling.
+</p>
+</div>
+
+<div class="panel">
+<h3>Access can be the real constraint</h3>
+<p>
+APIs may be technically available while production use still
+depends on paid plans, trials, enterprise relationships,
+approval or sales contact.
+</p>
+</div>
+
+<div class="panel">
+<h3>REST dominates</h3>
+<p>
+REST is the most common API surface in the dataset. GraphQL,
+SDKs, CLIs and webhooks appear as complementary surfaces.
+</p>
+</div>
+
+<div class="panel">
+<h3>MCP evidence needs provenance</h3>
+<p>
+Search results can surface third-party implementations or generic
+MCP references. Explicit first-party product-level evidence is
+therefore stronger than keyword matching alone.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Verification Experiment</h2>
+
+<div class="two">
+
+<div class="panel">
+<h3>First automated pass</h3>
+<div class="big">25%</div>
+<p>5 / 20 matched the initial human-reviewed labels.</p>
+</div>
+
+<div class="panel">
+<h3>Improved pass</h3>
+<div class="big">90%</div>
+<p>18 / 20 matched the corrected human-reviewed labels.</p>
+</div>
+
+</div>
+
+<br>
+
+<div class="note">
+The benchmark applies only to the fixed 20-app verification sample,
+not to all 100 applications. The experiment showed that explicit
+first-party MCP evidence is more reliable than broad keyword matching.
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Research Methodology</h2>
+
+<div class="two">
+
+<div class="panel">
+<h3>1 · Discover</h3>
+<p>
+Use Composio Search for product-specific research covering APIs,
+authentication, access, MCP and developer documentation.
+</p>
+</div>
+
+<div class="panel">
+<h3>2 · Structure</h3>
+<p>
+Normalize the results into comparable fields for all 100 apps.
+</p>
+</div>
+
+<div class="panel">
+<h3>3 · Verify</h3>
+<p>
+Review a stratified 20-app sample against first-party evidence.
+</p>
+</div>
+
+<div class="panel">
+<h3>4 · Analyze</h3>
+<p>
+Aggregate the dataset to identify cross-category patterns and
+integration constraints.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>100-App Research Dataset</h2>
+
+<div class="controls">
+<input id="search" placeholder="Search apps...">
+
+<select id="category">
+<option value="">All categories</option>
+<option value="AI &amp; Knowledge Tools">AI &amp; Knowledge Tools</option><option value="CRM">CRM</option><option value="Communication">Communication</option><option value="Customer Support">Customer Support</option><option value="Developer &amp; Infrastructure">Developer &amp; Infrastructure</option><option value="E-commerce">E-commerce</option><option value="Finance &amp; Payments">Finance &amp; Payments</option><option value="Marketing &amp; Advertising">Marketing &amp; Advertising</option><option value="Productivity &amp; Project Management">Productivity &amp; Project Management</option><option value="Web Data &amp; Scraping">Web Data &amp; Scraping</option>
+</select>
+</div>
+
+<div class="table">
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>App</th>
+<th>Category</th>
+<th>Description</th>
+<th>Auth</th>
+<th>Access</th>
+<th>API</th>
+<th>MCP</th>
+<th>Buildability</th>
+<th>Evidence</th>
+</tr>
+</thead>
+
+<tbody id="appTable">
+
+    <tr data-category="CRM"
+        data-search="salesforce crm salesforce is a comprehensive enterprise customer relationship management (crm) platform that provides tools for business process automation, customer data management, and agentic ai development [1].">
+        <td>1</td>
+        <td><strong>Salesforce</strong></td>
+        <td>CRM</td>
+        <td>Salesforce is a comprehensive enterprise customer relationship management (CRM) platform that provides tools for business process automation, customer data management, and agentic AI development [1].</td>
+        <td>OAuth2</td>
+        <td>Unknown</td>
+        <td>REST, CLI, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://architect.salesforce.com/docs/architect/fundamentals/guide/platform-transformation" target="_blank">Source</a> <a href="https://rhumb.dev/blog/salesforce-api-autopsy" target="_blank">Source</a> <a href="https://developer.salesforce.com/free-trials" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="CRM"
+        data-search="hubspot crm hubspot is a crm and cms platform that provides a unified developer ecosystem for building custom applications, integrations, and automated workflows [1][2].">
+        <td>2</td>
+        <td><strong>HubSpot</strong></td>
+        <td>CRM</td>
+        <td>HubSpot is a CRM and CMS platform that provides a unified developer ecosystem for building custom applications, integrations, and automated workflows [1][2].</td>
+        <td>OAuth 2.0</td>
+        <td>Self-serve free</td>
+        <td>REST, GraphQL, SDK, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://developers.hubspot.com/developer-platform-basics" target="_blank">Source</a> <a href="https://developers.hubspot.com/" target="_blank">Source</a> <a href="https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/oauth-quickstart-guide" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="CRM"
+        data-search="pipedrive crm pipedrive is a sales crm platform featuring an intuitive restful api that allows users to manage sales pipelines, automate workflows, and integrate external applications [1][2][3].">
+        <td>3</td>
+        <td><strong>Pipedrive</strong></td>
+        <td>CRM</td>
+        <td>Pipedrive is a sales CRM platform featuring an intuitive RESTful API that allows users to manage sales pipelines, automate workflows, and integrate external applications [1][2][3].</td>
+        <td>OAuth 2.0, API key</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.pipedrive.com/en/features/crm-api" target="_blank">Source</a> <a href="https://pipedrive.readme.io/docs/core-api-concepts-about-pipedrive-api" target="_blank">Source</a> <a href="https://pipedrive.readme.io/docs/getting-started" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="CRM"
+        data-search="attio crm attio is an ai-native crm platform designed for startups and builders to unify customer data, automate workflows, and create custom gtm solutions [1][2].">
+        <td>4</td>
+        <td><strong>Attio</strong></td>
+        <td>CRM</td>
+        <td>Attio is an AI-native CRM platform designed for startups and builders to unify customer data, automate workflows, and create custom GTM solutions [1][2].</td>
+        <td>OAuth 2.0, API key, Bearer Token, Bearer</td>
+        <td>Paid plan required</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://attio.com/blog/meet-the-attio-developer-platform" target="_blank">Source</a> <a href="https://attio.com/?bhcl_id=58cbd4ea-6256-4ba8-b1b0-8c0d3eedd586_%7B%7Bsubscriber_id%7D%7D_%7B%7Bemail_address_id%7D%7D" target="_blank">Source</a> <a href="https://docs.attio.com/llms-full.txt" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="CRM"
+        data-search="twenty crm twenty is an open-source, extensible crm platform designed to give teams full control over their data, infrastructure, and business logic [1][2][3].">
+        <td>5</td>
+        <td><strong>Twenty</strong></td>
+        <td>CRM</td>
+        <td>Twenty is an open-source, extensible CRM platform designed to give teams full control over their data, infrastructure, and business logic [1][2][3].</td>
+        <td>API key, Bearer Token, Bearer</td>
+        <td>Self-serve trial</td>
+        <td>REST, GraphQL, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://twentyhq-twenty.mintlify.app/" target="_blank">Source</a> <a href="https://github.com/twentyhq/twenty/" target="_blank">Source</a> <a href="https://apis.io/providers/twenty/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="CRM"
+        data-search="podio crm podio is a flexible work management and collaboration platform that enables teams to build custom apps, workspaces, and workflows for project management, crm, and internal operations [1].">
+        <td>6</td>
+        <td><strong>Podio</strong></td>
+        <td>CRM</td>
+        <td>Podio is a flexible work management and collaboration platform that enables teams to build custom apps, workspaces, and workflows for project management, CRM, and internal operations [1].</td>
+        <td>OAuth 2.0</td>
+        <td>Self-serve free</td>
+        <td>REST, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://apis.io/providers/podio/" target="_blank">Source</a> <a href="https://apis.io/apis/podio/rest-api/" target="_blank">Source</a> <a href="https://apisscore.com/api/podio/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="CRM"
+        data-search="zoho crm crm zoho crm is a customer relationship management platform with a developer toolkit for automating work and integrating data via apis and sdks [1].">
+        <td>7</td>
+        <td><strong>Zoho CRM</strong></td>
+        <td>CRM</td>
+        <td>Zoho CRM is a customer relationship management platform with a developer toolkit for automating work and integrating data via APIs and SDKs [1].</td>
+        <td>OAuth 2.0, Bearer Token, Bearer</td>
+        <td>Self-serve trial</td>
+        <td>REST, GraphQL, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.zoho.com/crm/developer/" target="_blank">Source</a> <a href="https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html" target="_blank">Source</a> <a href="https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="CRM"
+        data-search="close crm close is an inside-sales crm with built-in calling, email, sms, and whatsapp capabilities [1][2].">
+        <td>8</td>
+        <td><strong>Close</strong></td>
+        <td>CRM</td>
+        <td>Close is an inside-sales CRM with built-in calling, email, SMS, and WhatsApp capabilities [1][2].</td>
+        <td>OAuth 2.0, API key, Basic Auth</td>
+        <td>Self-serve free</td>
+        <td>REST, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://apis.io/providers/close/" target="_blank">Source</a> <a href="https://docs.nexla.com/user-guides/connectors/close_com_api" target="_blank">Source</a> <a href="https://apis.io/security/close/close-authentication/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="CRM"
+        data-search="copper crm 1.">
+        <td>9</td>
+        <td><strong>Copper</strong></td>
+        <td>CRM</td>
+        <td>1.</td>
+        <td>OAuth 2.0, API key</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://supergood.ai/api-report-card/copper" target="_blank">Source</a> <a href="https://github.com/api-evangelist/copper/blob/main/apis.yml" target="_blank">Source</a> <a href="https://bollardai.com/resources/copper" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="CRM"
+        data-search="dealcloud crm dealcloud is an ai-powered relationship intelligence and crm platform designed for professional and financial services firms [1].">
+        <td>10</td>
+        <td><strong>DealCloud</strong></td>
+        <td>CRM</td>
+        <td>DealCloud is an AI-powered relationship intelligence and CRM platform designed for professional and financial services firms [1].</td>
+        <td>API key</td>
+        <td>Unknown</td>
+        <td>REST, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.intapp.com/" target="_blank">Source</a> <a href="https://api.docs.dealcloud.com/" target="_blank">Source</a> <a href="https://developers.anduintransact.com/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Customer Support"
+        data-search="zendesk customer support zendesk is a customer service software platform that provides help desk ticketing, issue tracking, and customer support management [1][2].">
+        <td>11</td>
+        <td><strong>Zendesk</strong></td>
+        <td>Customer Support</td>
+        <td>Zendesk is a customer service software platform that provides help desk ticketing, issue tracking, and customer support management [1][2].</td>
+        <td>OAuth2, Bearer Token, Bearer</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://support.zendesk.com/hc/en-us/articles/10840968198042-Announcing-the-removal-of-API-tokens-as-an-authentication-method-for-API-requests" target="_blank">Source</a> <a href="https://developer.zendesk.com/documentation/classic-web-widget-sdks/" target="_blank">Source</a> <a href="https://support.zendesk.com/hc/en-us/articles/8843683464346-Important-update-Password-access-for-APIs-will-soon-be-removed" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Customer Support"
+        data-search="intercom customer support intercom is a customer service platform that features a natively integrated ai agent called fin to handle support queries and ticketing [1].">
+        <td>12</td>
+        <td><strong>Intercom</strong></td>
+        <td>Customer Support</td>
+        <td>Intercom is a customer service platform that features a natively integrated AI agent called Fin to handle support queries and ticketing [1].</td>
+        <td>OAuth 2.0</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.intercom.com/" target="_blank">Source</a> <a href="https://userpilot.com/" target="_blank">Source</a> <a href="https://tray.ai/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Customer Support"
+        data-search="freshdesk customer support freshdesk is a cloud-based customer support platform that provides omnichannel ticketing, ai-powered automation, and collaborative workflows for businesses of all sizes [1][2].">
+        <td>13</td>
+        <td><strong>Freshdesk</strong></td>
+        <td>Customer Support</td>
+        <td>Freshdesk is a cloud-based customer support platform that provides omnichannel ticketing, AI-powered automation, and collaborative workflows for businesses of all sizes [1][2].</td>
+        <td>API key, Basic Auth</td>
+        <td>Enterprise only</td>
+        <td>REST, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://developers.freshdesk.com/api/" target="_blank">Source</a> <a href="https://www.freshworks.com/freshdesk/" target="_blank">Source</a> <a href="https://www.getmacha.com/blog/freshdesk-api-explained" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Customer Support"
+        data-search="front customer support front is a customer operations platform that unifies shared inboxes, messaging channels, and crm workflows into a single system [1][2].">
+        <td>14</td>
+        <td><strong>Front</strong></td>
+        <td>Customer Support</td>
+        <td>Front is a customer operations platform that unifies shared inboxes, messaging channels, and CRM workflows into a single system [1][2].</td>
+        <td>Unknown</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://front.com/product/integrate-with-customer-service-apps-front" target="_blank">Source</a> <a href="https://dev.frontapp.com/reference/api-terminology-101" target="_blank">Source</a> <a href="https://www.getmacha.com/blog/front-api-explained" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Customer Support"
+        data-search="pylon customer support pylon is an agentic customer support platform purpose-built for b2b that unifies communication channels like slack, email, and crms into a single ticketing system [1][2][3].">
+        <td>15</td>
+        <td><strong>Pylon</strong></td>
+        <td>Customer Support</td>
+        <td>Pylon is an agentic customer support platform purpose-built for B2B that unifies communication channels like Slack, email, and CRMs into a single ticketing system [1][2][3].</td>
+        <td>Bearer Token, Bearer</td>
+        <td>Unknown</td>
+        <td>REST, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.usepylon.com/integrations" target="_blank">Source</a> <a href="https://apis.io/providers/pylon/" target="_blank">Source</a> <a href="https://www.usepylon.com/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Customer Support"
+        data-search="liveagent customer support liveagent is an all-in-one customer service platform providing live chat, ticketing, ai chatbots, and call center features in a single dashboard [1].">
+        <td>16</td>
+        <td><strong>LiveAgent</strong></td>
+        <td>Customer Support</td>
+        <td>LiveAgent is an all-in-one customer service platform providing live chat, ticketing, AI chatbots, and call center features in a single dashboard [1].</td>
+        <td>Unknown</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.liveagent.com/" target="_blank">Source</a> <a href="https://www.liveagent.com/pricing/" target="_blank">Source</a> <a href="https://www.liveagent.com/features/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Customer Support"
+        data-search="plain customer support plain is an ai-native customer infrastructure platform designed for b2b saas that provides programmable support workflows through an api-first architecture [1][2].">
+        <td>17</td>
+        <td><strong>Plain</strong></td>
+        <td>Customer Support</td>
+        <td>Plain is an AI-native customer infrastructure platform designed for B2B SaaS that provides programmable support workflows through an API-first architecture [1][2].</td>
+        <td>API key, Bearer Token, Bearer</td>
+        <td>Self-serve free</td>
+        <td>GraphQL, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.plain.com/blog/api-first-support-platforms" target="_blank">Source</a> <a href="https://www.plain.com/blog/api-first-support-ai-agents" target="_blank">Source</a> <a href="https://apis.io/apis/plain-support/plain-support-graphql-api/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Customer Support"
+        data-search="help scout customer support help scout is an email-first help desk platform providing shared inboxes, live chat, knowledge bases, and a customer portal [1][2].">
+        <td>18</td>
+        <td><strong>Help Scout</strong></td>
+        <td>Customer Support</td>
+        <td>Help Scout is an email-first help desk platform providing shared inboxes, live chat, knowledge bases, and a customer portal [1][2].</td>
+        <td>OAuth 2.0, OAuth2, Bearer</td>
+        <td>Self-serve trial</td>
+        <td>REST, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://apis.io/providers/helpscout/" target="_blank">Source</a> <a href="https://raw.githubusercontent.com/api-evangelist/helpscout/refs/heads/main/apis.yml" target="_blank">Source</a> <a href="https://www.getmacha.com/blog/how-to-use-the-help-scout-api" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Customer Support"
+        data-search="gorgias customer support gorgias is an ecommerce-focused customer support platform that provides a unified helpdesk for managing omnichannel conversations and automated ai support [1][2].">
+        <td>19</td>
+        <td><strong>Gorgias</strong></td>
+        <td>Customer Support</td>
+        <td>Gorgias is an ecommerce-focused customer support platform that provides a unified helpdesk for managing omnichannel conversations and automated AI support [1][2].</td>
+        <td>OAuth2, API key, Basic Auth</td>
+        <td>Self-serve free</td>
+        <td>REST, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://supergood.ai/api-report-card/gorgias" target="_blank">Source</a> <a href="https://www.gorgias.com/products/helpdesk" target="_blank">Source</a> <a href="https://www.getmacha.com/blog/how-to-use-the-gorgias-api" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Customer Support"
+        data-search="gladly customer support gladly is an ai-powered customer service platform that unifies voice, chat, sms, email, and social media into a single, channel-agnostic conversation history for each customer [1][2].">
+        <td>20</td>
+        <td><strong>Gladly</strong></td>
+        <td>Customer Support</td>
+        <td>Gladly is an AI-powered customer service platform that unifies voice, chat, SMS, email, and social media into a single, channel-agnostic conversation history for each customer [1][2].</td>
+        <td>Basic Auth</td>
+        <td>Unknown</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://github.com/api-evangelist/gladly/blob/main/apis.yml" target="_blank">Source</a> <a href="https://gtmtools.dev/tools/gladly/" target="_blank">Source</a> <a href="https://apis.io/providers/gladly/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Communication"
+        data-search="slack communication slack is a platform for team communication, workflow automation, and ai integration [1][2].">
+        <td>21</td>
+        <td><strong>Slack</strong></td>
+        <td>Communication</td>
+        <td>Slack is a platform for team communication, workflow automation, and AI integration [1][2].</td>
+        <td>OAuth 2.0</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://slack.dev/" target="_blank">Source</a> <a href="https://slack.com/pricing" target="_blank">Source</a> <a href="http://docs.slack.dev/apis/web-api/using-web-api-with-postman" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Communication"
+        data-search="twilio communication twilio is a cloud communications platform providing apis for sms, voice, email, and authentication to help developers build and orchestrate customer conversations [1][2][3].">
+        <td>22</td>
+        <td><strong>Twilio</strong></td>
+        <td>Communication</td>
+        <td>Twilio is a cloud communications platform providing APIs for SMS, voice, email, and authentication to help developers build and orchestrate customer conversations [1][2][3].</td>
+        <td>OAuth 2.0, API key, Basic Auth</td>
+        <td>Self-serve trial</td>
+        <td>REST, SDK, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.twilio.com/docs" target="_blank">Source</a> <a href="https://www.twilio.com/en-us" target="_blank">Source</a> <a href="https://www.twilio.com/en-us/products" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Communication"
+        data-search="zoho cliq communication zoho cliq is a team messaging and collaboration platform that facilitates internal and external business communication through chats, channels, and integrated automation tools [1][2].">
+        <td>23</td>
+        <td><strong>Zoho Cliq</strong></td>
+        <td>Communication</td>
+        <td>Zoho Cliq is a team messaging and collaboration platform that facilitates internal and external business communication through chats, channels, and integrated automation tools [1][2].</td>
+        <td>OAuth 2.0</td>
+        <td>Self-serve free</td>
+        <td>REST, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.zoho.com/cliq/" target="_blank">Source</a> <a href="https://apis.io/providers/zoho-cliq/" target="_blank">Source</a> <a href="https://www.zoho.com/cliq/help/restapi/v3/introduction/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Communication"
+        data-search="lark/larksuite communication lark (larksuite) is an all-in-one collaboration and enterprise messaging suite.">
+        <td>24</td>
+        <td><strong>Lark/Larksuite</strong></td>
+        <td>Communication</td>
+        <td>Lark (Larksuite) is an all-in-one collaboration and enterprise messaging suite.</td>
+        <td>OAuth2</td>
+        <td>Admin approval</td>
+        <td>REST, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://github.com/Subodh26oct/composio-api-research-agent/blob/refs/heads/main/research_agent.py" target="_blank">Source</a> <a href="https://www.npmjs.com/package/@xwang152/claw-lark" target="_blank">Source</a> <a href="https://github.com/Nonsteroidal-steelman66/lark-mcp-cli" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Communication"
+        data-search="pumble communication pumble is a team communication platform that facilitates workspace messaging, workflow automation, and ai agent integration [1][2].">
+        <td>25</td>
+        <td><strong>Pumble</strong></td>
+        <td>Communication</td>
+        <td>Pumble is a team communication platform that facilitates workspace messaging, workflow automation, and AI agent integration [1][2].</td>
+        <td>API key, Bearer Token, Bearer</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://pumble.com/learn/pumble/ai-automation-guide/" target="_blank">Source</a> <a href="https://pumble.com/learn/pumble/connecting-pumble-with-ai-agents-mcp/" target="_blank">Source</a> <a href="https://cake-com.github.io/pumble-node-sdk/basic-concepts.html" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Communication"
+        data-search="discord communication discord is a communication platform that provides tools for developers to integrate social features like chat, voice, and presence into their own applications [1][2][3].">
+        <td>26</td>
+        <td><strong>Discord</strong></td>
+        <td>Communication</td>
+        <td>Discord is a communication platform that provides tools for developers to integrate social features like chat, voice, and presence into their own applications [1][2][3].</td>
+        <td>OAuth2</td>
+        <td>Unknown</td>
+        <td>REST, SDK, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://discord.com/developers/social-sdk" target="_blank">Source</a> <a href="https://discord.com/developers/?store_signup=true" target="_blank">Source</a> <a href="https://docs.discord.com/developers/discord-social-sdk/core-concepts" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Communication"
+        data-search="telegram communication telegram is a cloud-based mobile and desktop messaging app focused on speed and security [1][2].">
+        <td>27</td>
+        <td><strong>Telegram</strong></td>
+        <td>Communication</td>
+        <td>Telegram is a cloud-based mobile and desktop messaging app focused on speed and security [1][2].</td>
+        <td>Unknown</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://core.telegram.org/bots" target="_blank">Source</a> <a href="https://core.telegram.org/api" target="_blank">Source</a> <a href="https://telegram.org/tos/bot-developers" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Communication"
+        data-search="whatsapp business communication 1.">
+        <td>28</td>
+        <td><strong>WhatsApp Business</strong></td>
+        <td>Communication</td>
+        <td>1.</td>
+        <td>Bearer Token, Bearer</td>
+        <td>Unknown</td>
+        <td>REST, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://developers.facebook.com/docs/whatsapp/cloud-api/overview/" target="_blank">Source</a> <a href="https://developers.facebook.com/docs/whatsapp/overview/" target="_blank">Source</a> <a href="https://developers.facebook.com/docs/whatsapp/cloud-api/reference/whatsapp-business-accounts/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Communication"
+        data-search="aircall communication aircall is a cloud-based business phone system and ai-powered customer communications platform designed for sales and support teams [1].">
+        <td>29</td>
+        <td><strong>Aircall</strong></td>
+        <td>Communication</td>
+        <td>Aircall is a cloud-based business phone system and AI-powered customer communications platform designed for sales and support teams [1].</td>
+        <td>OAuth 2.0, Basic Auth</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://supergood.ai/api-report-card/aircall" target="_blank">Source</a> <a href="https://developers.aircall.io/api-references" target="_blank">Source</a> <a href="https://developers.aircall.io/advanced-tutorials/activity-tracker" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Communication"
+        data-search="vonage communication vonage communication apis let developers build programmable messaging, voice, video, verification, and related communications features.">
+        <td>30</td>
+        <td><strong>Vonage</strong></td>
+        <td>Communication</td>
+        <td>Vonage Communication APIs let developers build programmable messaging, voice, video, verification, and related communications features.</td>
+        <td>Basic Auth, JWT</td>
+        <td>Partner approval</td>
+        <td>REST, SDK, CLI, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.vonage.com/communications-apis/apis/" target="_blank">Source</a> <a href="https://developer.vonage.com/en/documentation" target="_blank">Source</a> <a href="https://developer.vonage.com/en/dashboard/build/applications" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Marketing &amp; Advertising"
+        data-search="google ads marketing &amp; advertising google ads is a comprehensive digital advertising platform that allows businesses to create, manage, and optimize online ad campaigns across google properties and the web [1][2][3].">
+        <td>31</td>
+        <td><strong>Google Ads</strong></td>
+        <td>Marketing &amp; Advertising</td>
+        <td>Google Ads is a comprehensive digital advertising platform that allows businesses to create, manage, and optimize online ad campaigns across Google properties and the web [1][2][3].</td>
+        <td>OAuth 2.0</td>
+        <td>Unknown</td>
+        <td>REST, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://skillsmp.com/creators/selrai-company/claude-workshop-kit/skills-google-ads-connector" target="_blank">Source</a> <a href="https://modulex.dev/integrations/google-ads" target="_blank">Source</a> <a href="https://websaas.ai/projects/google-max-performance-video-generator" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Marketing &amp; Advertising"
+        data-search="meta ads marketing &amp; advertising meta ads manager is a centralized platform for creating, managing, and analyzing advertising campaigns across facebook, instagram, messenger, and the audience network [1][2].">
+        <td>32</td>
+        <td><strong>Meta Ads</strong></td>
+        <td>Marketing &amp; Advertising</td>
+        <td>Meta Ads Manager is a centralized platform for creating, managing, and analyzing advertising campaigns across Facebook, Instagram, Messenger, and the Audience Network [1][2].</td>
+        <td>OAuth2</td>
+        <td>Self-serve free</td>
+        <td>REST, GraphQL, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://uniworldstudios.com/blog/how-to-use-meta-ads-manager-a-step-by-step-guide" target="_blank">Source</a> <a href="https://vamasters.com/facebook-ads-virtual-assistant/" target="_blank">Source</a> <a href="https://uniworldstudios.com/blog/how-to-connect-facebook-page-to-meta-ads-manager" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Marketing &amp; Advertising"
+        data-search="linkedin ads marketing &amp; advertising linkedin ads is an online advertising platform that enables businesses to reach professional audiences, generate leads, and drive growth through targeted campaigns managed within the linkedin campaign manager [1][2].">
+        <td>33</td>
+        <td><strong>LinkedIn Ads</strong></td>
+        <td>Marketing &amp; Advertising</td>
+        <td>LinkedIn Ads is an online advertising platform that enables businesses to reach professional audiences, generate leads, and drive growth through targeted campaigns managed within the LinkedIn Campaign Manager [1][2].</td>
+        <td>OAuth2</td>
+        <td>Unknown</td>
+        <td>REST, webhook, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://business.linkedin.com/advertise" target="_blank">Source</a> <a href="https://business.linkedin.com/advertise?src=li-lmspage" target="_blank">Source</a> <a href="https://adspirer.mintlify.app/ad-platforms/linkedin-ads" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Marketing &amp; Advertising"
+        data-search="gohighlevel marketing &amp; advertising gohighlevel is an all-in-one marketing and crm platform designed for agencies to manage, automate, and white-label business solutions for clients [1][2].">
+        <td>34</td>
+        <td><strong>GoHighLevel</strong></td>
+        <td>Marketing &amp; Advertising</td>
+        <td>GoHighLevel is an all-in-one marketing and CRM platform designed for agencies to manage, automate, and white-label business solutions for clients [1][2].</td>
+        <td>API key</td>
+        <td>Paid plan required</td>
+        <td>REST, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://ghl.software/gohighlevel-review/" target="_blank">Source</a> <a href="https://shortvids.co/gohighlevel-vs-clickfunnels/" target="_blank">Source</a> <a href="https://en.paperblog.com/gohighlevel-review-2024-is-this-crm-automation-7900477/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Marketing &amp; Advertising"
+        data-search="mailchimp marketing &amp; advertising intuit mailchimp is an email marketing and automation platform for growing businesses [1][2].">
+        <td>35</td>
+        <td><strong>Mailchimp</strong></td>
+        <td>Marketing &amp; Advertising</td>
+        <td>Intuit Mailchimp is an email marketing and automation platform for growing businesses [1][2].</td>
+        <td>OAuth2, API key</td>
+        <td>Self-serve free</td>
+        <td>REST, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://mailchimp.com/newsroom/clustomer-campaign-launch/" target="_blank">Source</a> <a href="https://tr-web.stage.trustradius.com/compare-products/activecampaign-vs-mailchimp" target="_blank">Source</a> <a href="https://skillsmp.com/creators/selrai-company/claude-workshop-kit/skills-mailchimp-connector" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Marketing &amp; Advertising"
+        data-search="klaviyo marketing &amp; advertising klaviyo is a unified customer platform that provides email, sms, and marketing automation tools for e-commerce businesses [1][2].">
+        <td>36</td>
+        <td><strong>Klaviyo</strong></td>
+        <td>Marketing &amp; Advertising</td>
+        <td>Klaviyo is a unified customer platform that provides email, SMS, and marketing automation tools for e-commerce businesses [1][2].</td>
+        <td>API key</td>
+        <td>Paid plan required</td>
+        <td>REST, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://skillsmp.com/creators/selrai-company/claude-workshop-kit/skills-klaviyo-connector" target="_blank">Source</a> <a href="https://www.getapp.sg/software/105931/klaviyo" target="_blank">Source</a> <a href="https://modulex.dev/integrations/klaviyo" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Marketing &amp; Advertising"
+        data-search="systeme.io marketing &amp; advertising systeme.io is an all-in-one marketing platform that enables users to build sales funnels, manage email marketing, host online courses, and run affiliate programs [1][2][3].">
+        <td>37</td>
+        <td><strong>systeme.io</strong></td>
+        <td>Marketing &amp; Advertising</td>
+        <td>Systeme.io is an all-in-one marketing platform that enables users to build sales funnels, manage email marketing, host online courses, and run affiliate programs [1][2][3].</td>
+        <td>Unknown</td>
+        <td>Unknown</td>
+        <td>REST, GraphQL, SDK, CLI, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://systeme.io/de-old" target="_blank">Source</a> <a href="https://www.linkedin.com/posts/viktoria-georgieva-56b23a17a_tools-to-build-optimize-custom-landing-activity-7336293228876292096-RFOo" target="_blank">Source</a> <a href="https://en.paperblog.com/top-5-clickfunnels-alternative-2022-must-read-6952993/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Marketing &amp; Advertising"
+        data-search="pinterest marketing &amp; advertising pinterest is a visual discovery engine that functions as a discovery platform for products and ideas, enabling users to find inspiration and advertisers to reach high-intent consumers [1][2][3].">
+        <td>38</td>
+        <td><strong>Pinterest</strong></td>
+        <td>Marketing &amp; Advertising</td>
+        <td>Pinterest is a visual discovery engine that functions as a discovery platform for products and ideas, enabling users to find inspiration and advertisers to reach high-intent consumers [1][2][3].</td>
+        <td>OAuth2</td>
+        <td>Self-serve free</td>
+        <td>REST, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://medium.com/creative-black-pug-studio/5-pinterest-marketing-fundamentals-to-scale-your-business-in-2026-83de6dd293de" target="_blank">Source</a> <a href="https://app.studyraid.com/en/read/109919/4994614/running-targeted-ads-on-instagram-and-pinterest" target="_blank">Source</a> <a href="https://www.verdict.co.uk/pinterest-partner-ecosystems-profile/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Marketing &amp; Advertising"
+        data-search="threads marketing &amp; advertising threads is a text-based social media platform developed by meta as a companion to instagram [1][2].">
+        <td>39</td>
+        <td><strong>Threads</strong></td>
+        <td>Marketing &amp; Advertising</td>
+        <td>Threads is a text-based social media platform developed by Meta as a companion to Instagram [1][2].</td>
+        <td>Unknown</td>
+        <td>Unknown</td>
+        <td>MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://thesocialshepherd.com/blog/threads-statistics" target="_blank">Source</a> <a href="https://www.acronym.com/threads-and-bluesky-a-new-era-of-social-networking/" target="_blank">Source</a> <a href="https://blog.hubspot.com/marketing/twitter-x-vs-threads" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Marketing &amp; Advertising"
+        data-search="sendgrid marketing &amp; advertising sendgrid is a cloud-based email delivery and marketing platform providing transactional and marketing email services at scale [1][2].">
+        <td>40</td>
+        <td><strong>SendGrid</strong></td>
+        <td>Marketing &amp; Advertising</td>
+        <td>SendGrid is a cloud-based email delivery and marketing platform providing transactional and marketing email services at scale [1][2].</td>
+        <td>API key</td>
+        <td>Unknown</td>
+        <td>REST, SDK, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.capterra.com.au/software/1004681/sendgrid" target="_blank">Source</a> <a href="https://apis.io/industries/marketing-advertising/" target="_blank">Source</a> <a href="https://modulex.dev/integrations/sendgrid" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="E-commerce"
+        data-search="shopify e-commerce shopify is an e-commerce platform that lets merchants manage storefronts and operations, with apis for reading/writing store data and building custom storefronts.">
+        <td>41</td>
+        <td><strong>Shopify</strong></td>
+        <td>E-commerce</td>
+        <td>Shopify is an e-commerce platform that lets merchants manage storefronts and operations, with APIs for reading/writing store data and building custom storefronts.</td>
+        <td>OAuth 2.0, HMAC</td>
+        <td>Partner approval</td>
+        <td>REST, GraphQL, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://qualimero.com/en/blog/shopify-api" target="_blank">Source</a> <a href="https://codeatoz.com/blog/shopify-custom-app-development/" target="_blank">Source</a> <a href="https://www.adsx.com/blog/shopify-api-app-development-guide" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="E-commerce"
+        data-search="woocommerce e-commerce woocommerce is an e-commerce platform that functions as a flexible, open-source plugin for wordpress, enabling users to transform their sites into fully functional online stores [1][2].">
+        <td>42</td>
+        <td><strong>WooCommerce</strong></td>
+        <td>E-commerce</td>
+        <td>WooCommerce is an e-commerce platform that functions as a flexible, open-source plugin for WordPress, enabling users to transform their sites into fully functional online stores [1][2].</td>
+        <td>API key, Bearer Token, Bearer, JWT</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://docs.arc.cdata.com/26.3/cloud/en/connectors/woocommerce/woocommerce" target="_blank">Source</a> <a href="https://wphealthkit.com/blog/woocommerce-rest-api-security-endpoints" target="_blank">Source</a> <a href="https://codeatoz.com/blog/woocommerce-rest-api-authentication-guide/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="E-commerce"
+        data-search="bigcommerce e-commerce bigcommerce is a saas e-commerce platform that provides comprehensive apis for managing online store operations, including products, orders, customers, and checkout workflows [1][2].">
+        <td>43</td>
+        <td><strong>BigCommerce</strong></td>
+        <td>E-commerce</td>
+        <td>BigCommerce is a SaaS e-commerce platform that provides comprehensive APIs for managing online store operations, including products, orders, customers, and checkout workflows [1][2].</td>
+        <td>OAuth 2.0</td>
+        <td>Paid plan required</td>
+        <td>REST, GraphQL, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://deepwiki.com/bigcommerce/docs/2-core-commerce-apis" target="_blank">Source</a> <a href="https://apis.io/providers/bigcommerce/" target="_blank">Source</a> <a href="https://decodeerror.com/bigcommerce/authentication" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="E-commerce"
+        data-search="salesforce commerce cloud e-commerce salesforce commerce cloud (formerly demandware) is an enterprise-grade platform for building and scaling b2c and b2b e-commerce storefronts, order management, and headless commerce experiences [1][2].">
+        <td>44</td>
+        <td><strong>Salesforce Commerce Cloud</strong></td>
+        <td>E-commerce</td>
+        <td>Salesforce Commerce Cloud (formerly Demandware) is an enterprise-grade platform for building and scaling B2C and B2B e-commerce storefronts, order management, and headless commerce experiences [1][2].</td>
+        <td>OAuth 2.0</td>
+        <td>Self-serve free</td>
+        <td>REST, GraphQL, SDK, CLI, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://github.com/api-evangelist/salesforce-commerce-cloud" target="_blank">Source</a> <a href="https://www.salesforce.com/eu/commerce/cloud/" target="_blank">Source</a> <a href="https://raw.githubusercontent.com/api-evangelist/demandware/refs/heads/main/apis.yml" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="E-commerce"
+        data-search="magento/adobe commerce e-commerce adobe commerce (formerly magento) is an enterprise-grade e-commerce platform that enables merchants to build, customize, and manage complex online stores including catalogs, inventory, and b2b/b2c workflows [1][2][3].">
+        <td>45</td>
+        <td><strong>Magento/Adobe Commerce</strong></td>
+        <td>E-commerce</td>
+        <td>Adobe Commerce (formerly Magento) is an enterprise-grade e-commerce platform that enables merchants to build, customize, and manage complex online stores including catalogs, inventory, and B2B/B2C workflows [1][2][3].</td>
+        <td>Bearer</td>
+        <td>Self-serve free</td>
+        <td>REST, GraphQL, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://docs.nexla.com/user-guides/connectors/adobe_commerce_magento_api" target="_blank">Source</a> <a href="https://www.mgsoftware.nl/en/api-koppelingen/magento" target="_blank">Source</a> <a href="https://docs.workato.com/connectors/adobe-commerce-magento.html" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="E-commerce"
+        data-search="squarespace e-commerce squarespace is an all-in-one website building and e-commerce platform that enables individuals and businesses to create, manage, and scale their online presence [1][2].">
+        <td>46</td>
+        <td><strong>Squarespace</strong></td>
+        <td>E-commerce</td>
+        <td>Squarespace is an all-in-one website building and e-commerce platform that enables individuals and businesses to create, manage, and scale their online presence [1][2].</td>
+        <td>OAuth 2.0, API key, Bearer Token, Bearer</td>
+        <td>Self-serve free</td>
+        <td>REST, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://raw.githubusercontent.com/api-evangelist/squarespace/refs/heads/main/apis.yml" target="_blank">Source</a> <a href="https://github.com/api-evangelist/squarespace" target="_blank">Source</a> <a href="https://raw.githubusercontent.com/api-evangelist/squarespace/refs/heads/main/vocabulary/squarespace-vocabulary.yml" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="E-commerce"
+        data-search="ecwid e-commerce ecwid is a multi-channel e-commerce platform that allows merchants to add a customizable online storefront to existing websites, social media, and marketplaces [1][2].">
+        <td>47</td>
+        <td><strong>Ecwid</strong></td>
+        <td>E-commerce</td>
+        <td>Ecwid is a multi-channel e-commerce platform that allows merchants to add a customizable online storefront to existing websites, social media, and marketplaces [1][2].</td>
+        <td>OAuth 2.0, Bearer Token, Bearer</td>
+        <td>Paid plan required</td>
+        <td>REST, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://apis.io/providers/ecwid/" target="_blank">Source</a> <a href="https://www.ecwid.com/" target="_blank">Source</a> <a href="https://docs.ecwid.com/api-reference/rest-api/store-profile/update-store-profile" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="E-commerce"
+        data-search="gumroad e-commerce gumroad is a digital commerce platform that enables creators to sell digital products, memberships, and physical goods directly to their audience with built-in checkout, licensing, and analytics [1][2][3].">
+        <td>48</td>
+        <td><strong>Gumroad</strong></td>
+        <td>E-commerce</td>
+        <td>Gumroad is a digital commerce platform that enables creators to sell digital products, memberships, and physical goods directly to their audience with built-in checkout, licensing, and analytics [1][2][3].</td>
+        <td>OAuth 2.0, Bearer Token, Bearer</td>
+        <td>Self-serve free</td>
+        <td>REST, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://apis.io/providers/gumroad/" target="_blank">Source</a> <a href="https://gtmtools.dev/tools/gumroad/" target="_blank">Source</a> <a href="https://composio.dev/toolkits/gumroad" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="E-commerce"
+        data-search="amazon selling partner api e-commerce the amazon selling partner api (sp-api) is a rest-based suite of apis that allows developers to programmatically access and manage amazon seller data, including orders, inventory, listings, and reports [1][2].">
+        <td>49</td>
+        <td><strong>Amazon Selling Partner API</strong></td>
+        <td>E-commerce</td>
+        <td>The Amazon Selling Partner API (SP-API) is a REST-based suite of APIs that allows developers to programmatically access and manage Amazon seller data, including orders, inventory, listings, and reports [1][2].</td>
+        <td>OAuth 2.0</td>
+        <td>Admin approval</td>
+        <td>REST, SDK, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://apidog.com/blog/amazon-sp-api-integration-guide/" target="_blank">Source</a> <a href="https://apis.io/providers/amazon-seller-central/" target="_blank">Source</a> <a href="https://debuggingstack.com/amazon-seller-central-for-developers-can-you-create-a-developer-only-account/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="E-commerce"
+        data-search="fanbasis e-commerce fanbasis is an all-in-one platform for running and scaling high-ticket digital businesses, including checkout/payments, financing/bnpl, fulfillment, subscriptions, analytics, and an affiliate engine [1].">
+        <td>50</td>
+        <td><strong>fanbasis</strong></td>
+        <td>E-commerce</td>
+        <td>FanBasis is an all-in-one platform for running and scaling high-ticket digital businesses, including checkout/payments, financing/BNPL, fulfillment, subscriptions, analytics, and an affiliate engine [1].</td>
+        <td>Unknown</td>
+        <td>Unknown</td>
+        <td>REST, GraphQL, SDK, CLI, webhook, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.fanbasis.com/" target="_blank">Source</a> <a href="https://zapier.com/automations/business-owners/e-commerce-operations/order-fulfillment/send-new-buyer-details-to-order-processing-endpoint" target="_blank">Source</a> <a href="https://www.cbinsights.com/company/fanbasis" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Web Data &amp; Scraping"
+        data-search="dataforseo web data &amp; scraping dataforseo is an api-first platform providing a comprehensive stack of seo, search marketing, and digital data solutions [1][2][3].">
+        <td>51</td>
+        <td><strong>DataForSEO</strong></td>
+        <td>Web Data &amp; Scraping</td>
+        <td>DataForSEO is an API-first platform providing a comprehensive stack of SEO, search marketing, and digital data solutions [1][2][3].</td>
+        <td>Basic Auth</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://dataforseo.com/" target="_blank">Source</a> <a href="https://dataforseo.com/apis" target="_blank">Source</a> <a href="https://dataforseo.com/solutions/seo" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Web Data &amp; Scraping"
+        data-search="se ranking web data &amp; scraping se ranking provides a platform for automated seo and marketing data retrieval, project management, and ai-assisted research [1][2].">
+        <td>52</td>
+        <td><strong>SE Ranking</strong></td>
+        <td>Web Data &amp; Scraping</td>
+        <td>SE Ranking provides a platform for automated SEO and marketing data retrieval, project management, and AI-assisted research [1][2].</td>
+        <td>API key</td>
+        <td>Enterprise only</td>
+        <td>REST, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://seranking.com/api/how-to-get-api/" target="_blank">Source</a> <a href="https://seranking.com/api.html" target="_blank">Source</a> <a href="https://seranking.com/api/data/getting-started/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Web Data &amp; Scraping"
+        data-search="ahrefs web data &amp; scraping ahrefs is a comprehensive seo software suite that provides tools for backlink analysis, keyword research, site auditing, and competitor monitoring [1].">
+        <td>53</td>
+        <td><strong>Ahrefs</strong></td>
+        <td>Web Data &amp; Scraping</td>
+        <td>Ahrefs is a comprehensive SEO software suite that provides tools for backlink analysis, keyword research, site auditing, and competitor monitoring [1].</td>
+        <td>API key</td>
+        <td>Unknown</td>
+        <td>REST</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://agentceres.com/grow" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Web Data &amp; Scraping"
+        data-search="mrscraper web data &amp; scraping 1.">
+        <td>54</td>
+        <td><strong>MrScraper</strong></td>
+        <td>Web Data &amp; Scraping</td>
+        <td>1.</td>
+        <td>Bearer Token, Bearer</td>
+        <td>Self-serve trial</td>
+        <td>REST, SDK, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://mrscraper.com/web-scraper-api" target="_blank">Source</a> <a href="https://mrscraper.com/pricing" target="_blank">Source</a> <a href="https://mrscraper.com/blog/scraping-api-rate-limits-retry-logic" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Web Data &amp; Scraping"
+        data-search="apify web data &amp; scraping 1) description: apify is a platform and marketplace for building and running custom web automation and 4,000+ ready-made scrapers (“actors”).">
+        <td>55</td>
+        <td><strong>Apify</strong></td>
+        <td>Web Data &amp; Scraping</td>
+        <td>1) Description: Apify is a platform and marketplace for building and running custom web automation and 4,000+ ready-made scrapers (“Actors”).</td>
+        <td>Unknown</td>
+        <td>Unknown</td>
+        <td>MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://think-pol.com/osint-landscape" target="_blank">Source</a> <a href="https://www.solopreneur.global/posts/automate-supplier-research-low-code-ai" target="_blank">Source</a> <a href="https://www.linkedin.com/posts/abeayo_ai-automation-productbuilding-activity-7475149301954953216-bOoh" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Web Data &amp; Scraping"
+        data-search="firecrawl web data &amp; scraping firecrawl is an infrastructure layer that converts websites into clean, structured data for ai agents and rag pipelines [1].">
+        <td>56</td>
+        <td><strong>Firecrawl</strong></td>
+        <td>Web Data &amp; Scraping</td>
+        <td>Firecrawl is an infrastructure layer that converts websites into clean, structured data for AI agents and RAG pipelines [1].</td>
+        <td>API key</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.firecrawl.dev/" target="_blank">Source</a> <a href="https://apidog.com/" target="_blank">Source</a> <a href="https://apix-drive.com/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Web Data &amp; Scraping"
+        data-search="bright data web data &amp; scraping 1.">
+        <td>57</td>
+        <td><strong>Bright Data</strong></td>
+        <td>Web Data &amp; Scraping</td>
+        <td>1.</td>
+        <td>Unknown</td>
+        <td>Unknown</td>
+        <td>MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://think-pol.com/osint-landscape" target="_blank">Source</a> <a href="https://www.nimbleway.com/blog/top-claude-code-plugins" target="_blank">Source</a> <a href="https://www.linkedin.com/posts/amit-shukla-21787b59_ai-productivity-automation-activity-7378058715561775105-N82N" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Web Data &amp; Scraping"
+        data-search="sherlock web data &amp; scraping sherlock is an open-source command-line tool used for finding social media accounts by username across hundreds of websites [1][2].">
+        <td>58</td>
+        <td><strong>Sherlock</strong></td>
+        <td>Web Data &amp; Scraping</td>
+        <td>Sherlock is an open-source command-line tool used for finding social media accounts by username across hundreds of websites [1][2].</td>
+        <td>API key</td>
+        <td>Self-serve free</td>
+        <td>CLI, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://github.com/sherlock-project/sherlock" target="_blank">Source</a> <a href="https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md" target="_blank">Source</a> <a href="https://github.com/sherlock-project/sherlock/pull/2435" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Web Data &amp; Scraping"
+        data-search="waterfall.io web data &amp; scraping waterfall is a b2b data solution that aggregates over 30 data vendors into a single api for contact and company enrichment, prospecting, and email verification [1][2].">
+        <td>59</td>
+        <td><strong>Waterfall.io</strong></td>
+        <td>Web Data &amp; Scraping</td>
+        <td>Waterfall is a B2B data solution that aggregates over 30 data vendors into a single API for contact and company enrichment, prospecting, and email verification [1][2].</td>
+        <td>API key</td>
+        <td>Unknown</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://docs.waterfall.io/v1/introduction" target="_blank">Source</a> <a href="https://www.waterfall.io/" target="_blank">Source</a> <a href="https://docs.waterfall.io/v1/authentication" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Web Data &amp; Scraping"
+        data-search="clay web data &amp; scraping clay is a data and automation platform that enables developers to access gtm data, run enrichment functions, and manage workflows programmatically outside of its user interface [1][2][3].">
+        <td>60</td>
+        <td><strong>Clay</strong></td>
+        <td>Web Data &amp; Scraping</td>
+        <td>Clay is a data and automation platform that enables developers to access GTM data, run enrichment functions, and manage workflows programmatically outside of its user interface [1][2][3].</td>
+        <td>OAuth 2.0</td>
+        <td>Self-serve trial</td>
+        <td>REST, CLI, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://developers.clay.com/" target="_blank">Source</a> <a href="https://university.clay.com/docs/clay-api-cli" target="_blank">Source</a> <a href="https://developers.clay.com/concepts/execution-model" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Developer &amp; Infrastructure"
+        data-search="github developer &amp; infrastructure github is a code hosting and collaboration platform used for version control, code review, issue tracking, and developer automation [1].">
+        <td>61</td>
+        <td><strong>GitHub</strong></td>
+        <td>Developer &amp; Infrastructure</td>
+        <td>GitHub is a code hosting and collaboration platform used for version control, code review, issue tracking, and developer automation [1].</td>
+        <td>OAuth2, API key</td>
+        <td>Self-serve free</td>
+        <td>REST, GraphQL, SDK, CLI, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.workflowlibrary.ai/tool/github/" target="_blank">Source</a> <a href="https://www.digitalapplied.com/blog/github-agent-hq-multi-agent-platform" target="_blank">Source</a> <a href="https://bestaitoolfinder.com/github-mission-control/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Developer &amp; Infrastructure"
+        data-search="vercel developer &amp; infrastructure vercel is a frontend deployment and development platform that provides infrastructure for teams to build, preview, and ship web applications [1].">
+        <td>62</td>
+        <td><strong>Vercel</strong></td>
+        <td>Developer &amp; Infrastructure</td>
+        <td>Vercel is a frontend deployment and development platform that provides infrastructure for teams to build, preview, and ship web applications [1].</td>
+        <td>Bearer Token, Bearer</td>
+        <td>Paid plan required</td>
+        <td>REST, SDK, CLI, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://ssojet.com/b2b-sso-directory/company/vercel/" target="_blank">Source</a> <a href="https://docker.github.io/docker-agent/features/remote-mcp/" target="_blank">Source</a> <a href="https://docs.civic.com/welcome" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Developer &amp; Infrastructure"
+        data-search="netlify developer &amp; infrastructure netlify is a platform that unifies modern web development by combining site deployment, serverless functions, and build automation [1].">
+        <td>63</td>
+        <td><strong>Netlify</strong></td>
+        <td>Developer &amp; Infrastructure</td>
+        <td>Netlify is a platform that unifies modern web development by combining site deployment, serverless functions, and build automation [1].</td>
+        <td>OAuth2</td>
+        <td>Paid plan required</td>
+        <td>REST, CLI, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://ssojet.com/b2b-sso-directory/company/netlify/" target="_blank">Source</a> <a href="https://www.flowrunner.ai/integrations/" target="_blank">Source</a> <a href="https://saaspricehub.io/tools/netlify" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Developer &amp; Infrastructure"
+        data-search="cloudflare developer &amp; infrastructure cloudflare is a global cloud platform providing security, performance, and reliability services including edge computing, cdn, and infrastructure management [1][2].">
+        <td>64</td>
+        <td><strong>Cloudflare</strong></td>
+        <td>Developer &amp; Infrastructure</td>
+        <td>Cloudflare is a global cloud platform providing security, performance, and reliability services including edge computing, CDN, and infrastructure management [1][2].</td>
+        <td>API key</td>
+        <td>Paid plan required</td>
+        <td>REST, SDK, CLI, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://saaspricehub.io/tools/cloudflare" target="_blank">Source</a> <a href="https://www.trefis.com/data/companies/NET?from=NET-2025-09-12" target="_blank">Source</a> <a href="https://flowrunner.ai/integrations/category/developer-infrastructure" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Developer &amp; Infrastructure"
+        data-search="supabase developer &amp; infrastructure supabase is an open-source backend-as-a-service platform that provides a postgresql database, authentication, real-time subscriptions, and storage [1].">
+        <td>65</td>
+        <td><strong>Supabase</strong></td>
+        <td>Developer &amp; Infrastructure</td>
+        <td>Supabase is an open-source backend-as-a-service platform that provides a PostgreSQL database, authentication, real-time subscriptions, and storage [1].</td>
+        <td>API key, JWT</td>
+        <td>Paid plan required</td>
+        <td>REST, SDK, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://prosperinoss.com/tool/supabase" target="_blank">Source</a> <a href="https://github.com/twaldin/studyspot" target="_blank">Source</a> <a href="https://github.com/mithun50/Devr.AI" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Developer &amp; Infrastructure"
+        data-search="neo4j developer &amp; infrastructure neo4j is a graph database platform designed for building and managing graph-based systems that store and analyze highly connected data [1].">
+        <td>66</td>
+        <td><strong>Neo4j</strong></td>
+        <td>Developer &amp; Infrastructure</td>
+        <td>Neo4j is a graph database platform designed for building and managing graph-based systems that store and analyze highly connected data [1].</td>
+        <td>API key, Basic Auth</td>
+        <td>Enterprise only</td>
+        <td>REST, SDK, CLI, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.marketsandmarkets.com/Market-Reports/knowledge-graph-market-217920811.html" target="_blank">Source</a> <a href="https://www.linkedin.com/in/viktorbajraktar" target="_blank">Source</a> <a href="https://www.linkedin.com/in/divyammehta" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Developer &amp; Infrastructure"
+        data-search="snowflake developer &amp; infrastructure 1.">
+        <td>67</td>
+        <td><strong>Snowflake</strong></td>
+        <td>Developer &amp; Infrastructure</td>
+        <td>1.</td>
+        <td>Unknown</td>
+        <td>Paid plan required</td>
+        <td>REST, GraphQL, SDK, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://siesta.ai/connections/2115/snowflake" target="_blank">Source</a> <a href="https://siesta.ai/connections/category/development-infrastructure" target="_blank">Source</a> <a href="https://saaspricehub.io/tools/snowflake" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Developer &amp; Infrastructure"
+        data-search="mongodb atlas developer &amp; infrastructure mongodb atlas is a fully managed cloud database service [1].">
+        <td>68</td>
+        <td><strong>MongoDB Atlas</strong></td>
+        <td>Developer &amp; Infrastructure</td>
+        <td>MongoDB Atlas is a fully managed cloud database service [1].</td>
+        <td>API key</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.linkedin.com/in/charlespetchsy" target="_blank">Source</a> <a href="https://github.com/Victorkib/vulnscope" target="_blank">Source</a> <a href="https://enatega.com/app-cost-estimator/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Developer &amp; Infrastructure"
+        data-search="datadog developer &amp; infrastructure datadog is a cloud-based observability and security platform providing unified monitoring for metrics, logs, traces, and application performance [1][2].">
+        <td>69</td>
+        <td><strong>Datadog</strong></td>
+        <td>Developer &amp; Infrastructure</td>
+        <td>Datadog is a cloud-based observability and security platform providing unified monitoring for metrics, logs, traces, and application performance [1][2].</td>
+        <td>Unknown</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://saaspricehub.io/tools/datadog" target="_blank">Source</a> <a href="https://www.linkedin.com/in/jasonhand24" target="_blank">Source</a> <a href="https://flowrunner.ai/integrations/category/developer-infrastructure" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Developer &amp; Infrastructure"
+        data-search="sentry developer &amp; infrastructure sentry provides application error monitoring and performance tracking [1][2].">
+        <td>70</td>
+        <td><strong>Sentry</strong></td>
+        <td>Developer &amp; Infrastructure</td>
+        <td>Sentry provides application error monitoring and performance tracking [1][2].</td>
+        <td>Unknown</td>
+        <td>Paid plan required</td>
+        <td>REST, SDK, CLI, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://flowrunner.ai/integrations/category/developer-infrastructure" target="_blank">Source</a> <a href="https://flowrunner.ai/integrations/" target="_blank">Source</a> <a href="https://pagelive.io/claude-connectors" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Productivity &amp; Project Management"
+        data-search="notion productivity &amp; project management notion is a connected workspace for creating and organizing documents, databases, wikis, and project management workflows [1][2].">
+        <td>71</td>
+        <td><strong>Notion</strong></td>
+        <td>Productivity &amp; Project Management</td>
+        <td>Notion is a connected workspace for creating and organizing documents, databases, wikis, and project management workflows [1][2].</td>
+        <td>OAuth 2.0, API key</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.swytchcode.com/apis/notion" target="_blank">Source</a> <a href="https://toolhublibrary.com/tools/notion" target="_blank">Source</a> <a href="https://mcpplaygroundonline.com/blog/awesome-mcp-servers" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Productivity &amp; Project Management"
+        data-search="airtable productivity &amp; project management airtable is a cloud-based platform that combines spreadsheet functionality with relational database power to help teams organize projects and automate workflows [1][2].">
+        <td>72</td>
+        <td><strong>Airtable</strong></td>
+        <td>Productivity &amp; Project Management</td>
+        <td>Airtable is a cloud-based platform that combines spreadsheet functionality with relational database power to help teams organize projects and automate workflows [1][2].</td>
+        <td>API key, Bearer Token, Bearer</td>
+        <td>Self-serve free</td>
+        <td>REST, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://type.com/integrations/airtable" target="_blank">Source</a> <a href="https://composio.dev/toolkits/cody" target="_blank">Source</a> <a href="https://www.tinyfish.ai/blog/best-mcp-servers-for-claude-code" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Productivity &amp; Project Management"
+        data-search="linear productivity &amp; project management linear is a streamlined issue tracking and project management platform designed for software engineering teams.">
+        <td>73</td>
+        <td><strong>Linear</strong></td>
+        <td>Productivity &amp; Project Management</td>
+        <td>Linear is a streamlined issue tracking and project management platform designed for software engineering teams.</td>
+        <td>API key</td>
+        <td>Self-serve free</td>
+        <td>GraphQL, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://mcpplaygroundonline.com/blog/awesome-mcp-servers" target="_blank">Source</a> <a href="https://operator.io/integrations/linear" target="_blank">Source</a> <a href="https://www.syncdev.com/mcp-servers/official" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Productivity &amp; Project Management"
+        data-search="jira productivity &amp; project management jira is a project management and issue-tracking platform designed to help teams plan, track, and manage complex workflows [1][2].">
+        <td>74</td>
+        <td><strong>Jira</strong></td>
+        <td>Productivity &amp; Project Management</td>
+        <td>Jira is a project management and issue-tracking platform designed to help teams plan, track, and manage complex workflows [1][2].</td>
+        <td>OAuth 2.0</td>
+        <td>Self-serve trial</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.atlassian.com/agile/project-management/product-vs-project-management" target="_blank">Source</a> <a href="https://www.saaspricepulse.com/tools/jira" target="_blank">Source</a> <a href="https://vibehackers.io/mcp/category/productivity" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Productivity &amp; Project Management"
+        data-search="asana productivity &amp; project management asana is a project and task management platform that enables teams to coordinate work, track progress, and manage deadlines [1][2].">
+        <td>75</td>
+        <td><strong>Asana</strong></td>
+        <td>Productivity &amp; Project Management</td>
+        <td>Asana is a project and task management platform that enables teams to coordinate work, track progress, and manage deadlines [1][2].</td>
+        <td>OAuth 2.0</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://gist.github.com/jpeggdev/1aaa48c26286518b7aa20fed6092692e" target="_blank">Source</a> <a href="https://doi.org/10.20944/preprints202504.0245.v1" target="_blank">Source</a> <a href="https://stacker.ai/docs/data/data-sync/connectors" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Productivity &amp; Project Management"
+        data-search="monday.com productivity &amp; project management monday.com is a customizable work management platform for project planning, collaboration, and automation [1].">
+        <td>76</td>
+        <td><strong>Monday.com</strong></td>
+        <td>Productivity &amp; Project Management</td>
+        <td>Monday.com is a customizable work management platform for project planning, collaboration, and automation [1].</td>
+        <td>OAuth2, API key</td>
+        <td>Self-serve free</td>
+        <td>GraphQL, SDK, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://type.com/integrations/monday" target="_blank">Source</a> <a href="https://stacker.ai/docs/data/data-sync/connectors" target="_blank">Source</a> <a href="https://definable.ai/apps/monday_mcp/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Productivity &amp; Project Management"
+        data-search="clickup productivity &amp; project management clickup is an all-in-one cloud-based platform designed to centralize task management, project tracking, documentation, and team collaboration [1][2].">
+        <td>77</td>
+        <td><strong>ClickUp</strong></td>
+        <td>Productivity &amp; Project Management</td>
+        <td>ClickUp is an all-in-one cloud-based platform designed to centralize task management, project tracking, documentation, and team collaboration [1][2].</td>
+        <td>OAuth2, API key</td>
+        <td>Paid plan required</td>
+        <td>REST, CLI, webhook, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.cloudnuro.ai/integrations/clickup" target="_blank">Source</a> <a href="https://toolversum.com/reviews/clickup/" target="_blank">Source</a> <a href="https://stacker.ai/docs/data/data-sync/connectors" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Productivity &amp; Project Management"
+        data-search="coda productivity &amp; project management coda is a collaborative workspace that lets you turn documents into apps with tables, automations, and integrations via packs [1].">
+        <td>78</td>
+        <td><strong>Coda</strong></td>
+        <td>Productivity &amp; Project Management</td>
+        <td>Coda is a collaborative workspace that lets you turn documents into apps with tables, automations, and integrations via Packs [1].</td>
+        <td>OAuth2, API key, Bearer</td>
+        <td>Unknown</td>
+        <td>REST, GraphQL, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://operator.io/integrations/category/productivity-project-management" target="_blank">Source</a> <a href="https://operator.io/integrations/coda" target="_blank">Source</a> <a href="https://github.com/casper-studios/casper-marketplace/blob/main/plugins/engineering/integrations/skills/composio-connect/references/apps-catalog.md" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Productivity &amp; Project Management"
+        data-search="smartsheet productivity &amp; project management smartsheet is an enterprise work management and collaboration platform that combines a spreadsheet-like grid with dashboards, forms, automation, and reporting to help organizations plan, track, and automate work at scale [1][2].">
+        <td>79</td>
+        <td><strong>Smartsheet</strong></td>
+        <td>Productivity &amp; Project Management</td>
+        <td>Smartsheet is an enterprise work management and collaboration platform that combines a spreadsheet-like grid with dashboards, forms, automation, and reporting to help organizations plan, track, and automate work at scale [1][2].</td>
+        <td>OAuth2, Bearer Token, Bearer</td>
+        <td>Paid plan required</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://remowork.life/jobs/6a6a498ae681430a6b621e88/senior-software-engineer-i-finance-systems-remote-eligible" target="_blank">Source</a> <a href="https://remowork.life/jobs/6a6a498ae681430a6b621e89/senior-software-engineer-ii-applied-ai-remote-eligible" target="_blank">Source</a> <a href="https://remowork.life/jobs/6a6a498ae681430a6b621e9d/principal-product-manager-ai-creation-and-growth-remote-eligible" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Productivity &amp; Project Management"
+        data-search="harvest productivity &amp; project management harvest is a time-tracking and invoicing tool designed for teams and freelancers to manage projects and log billable hours [1][2].">
+        <td>80</td>
+        <td><strong>Harvest</strong></td>
+        <td>Productivity &amp; Project Management</td>
+        <td>Harvest is a time-tracking and invoicing tool designed for teams and freelancers to manage projects and log billable hours [1][2].</td>
+        <td>OAuth 2.0</td>
+        <td>Self-serve free</td>
+        <td>REST, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://type.com/integrations/harvest" target="_blank">Source</a> <a href="https://operator.io/integrations/category/productivity-project-management" target="_blank">Source</a> <a href="https://sistava.com/en/integrations" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Finance &amp; Payments"
+        data-search="stripe finance &amp; payments stripe is a comprehensive financial infrastructure platform that enables businesses to accept payments, manage subscriptions, and orchestrate complex financial workflows [1][2].">
+        <td>81</td>
+        <td><strong>Stripe</strong></td>
+        <td>Finance &amp; Payments</td>
+        <td>Stripe is a comprehensive financial infrastructure platform that enables businesses to accept payments, manage subscriptions, and orchestrate complex financial workflows [1][2].</td>
+        <td>API key</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://noizz.io/insights/stripe-deep-review" target="_blank">Source</a> <a href="https://theaitoolsbox.com/business-essentials/stripe-review/" target="_blank">Source</a> <a href="https://agenticskills.io/mcp/stripe" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Finance &amp; Payments"
+        data-search="plaid finance &amp; payments plaid provides apis that help apps connect to bank accounts and retrieve financial data like transactions, balances, and identity [1].">
+        <td>82</td>
+        <td><strong>Plaid</strong></td>
+        <td>Finance &amp; Payments</td>
+        <td>Plaid provides APIs that help apps connect to bank accounts and retrieve financial data like transactions, balances, and identity [1].</td>
+        <td>Unknown</td>
+        <td>Unknown</td>
+        <td>REST, CLI, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://clirank.dev/best/apis/fintech-and-banking" target="_blank">Source</a> <a href="https://www.toolify.ai/n8n/multi-bank-balance-synchronization-to-google-bigquery-via-plaid" target="_blank">Source</a> <a href="https://chatforest.com/guides/best-finance-mcp-servers/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Finance &amp; Payments"
+        data-search="binance finance &amp; payments binance is a cryptocurrency exchange providing market data, trading functions, and account management [1][2].">
+        <td>83</td>
+        <td><strong>Binance</strong></td>
+        <td>Finance &amp; Payments</td>
+        <td>Binance is a cryptocurrency exchange providing market data, trading functions, and account management [1][2].</td>
+        <td>API key</td>
+        <td>Self-serve free</td>
+        <td>REST, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://requestly.com/api-explorer/payments/top-10-apis" target="_blank">Source</a> <a href="https://requestly.com/api-explorer/" target="_blank">Source</a> <a href="https://gist.github.com/cagataycali/49226d11d7d1667e78a11846008624b4" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Finance &amp; Payments"
+        data-search="paygent connect (nmi-powered) finance &amp; payments paygent connect is an nmi-powered payment solution that provides a white-label, embedded payment gateway for secure transaction processing and merchant management [1].">
+        <td>84</td>
+        <td><strong>Paygent Connect (NMI-powered)</strong></td>
+        <td>Finance &amp; Payments</td>
+        <td>Paygent Connect is an NMI-powered payment solution that provides a white-label, embedded payment gateway for secure transaction processing and merchant management [1].</td>
+        <td>API key</td>
+        <td>Unknown</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://docs.nmi.com/reference/nmi-gateway-features" target="_blank">Source</a> <a href="https://docs.nmi.com/docs/payment-component" target="_blank">Source</a> <a href="https://docs.nmi.com/docs/quick-start" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Finance &amp; Payments"
+        data-search="ipayx finance &amp; payments ipayx provides payment processing solutions and financial forensic audit tools for cross-border transactions [1].">
+        <td>85</td>
+        <td><strong>iPayX</strong></td>
+        <td>Finance &amp; Payments</td>
+        <td>iPayX provides payment processing solutions and financial forensic audit tools for cross-border transactions [1].</td>
+        <td>Unknown</td>
+        <td>Unknown</td>
+        <td>REST, SDK, CLI, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://claudeskills.info/mcp/iPAYX-Technologies/mcp-fx-audit/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Finance &amp; Payments"
+        data-search="quickbooks finance &amp; payments quickbooks is a business management software that helps companies manage finances, invoice customers, track expenses, and record payments [1].">
+        <td>86</td>
+        <td><strong>QuickBooks</strong></td>
+        <td>Finance &amp; Payments</td>
+        <td>QuickBooks is a business management software that helps companies manage finances, invoice customers, track expenses, and record payments [1].</td>
+        <td>OAuth 2.0</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://quickbooks.intuit.com/global/" target="_blank">Source</a> <a href="https://www.apideck.com/blog/exploring-the-quickbooks-online-accounting-api" target="_blank">Source</a> <a href="https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Finance &amp; Payments"
+        data-search="xero finance &amp; payments xero is a cloud-based accounting platform for small to growing businesses that provides invoicing, bank reconciliation, expense tracking, and reporting [1].">
+        <td>87</td>
+        <td><strong>Xero</strong></td>
+        <td>Finance &amp; Payments</td>
+        <td>Xero is a cloud-based accounting platform for small to growing businesses that provides invoicing, bank reconciliation, expense tracking, and reporting [1].</td>
+        <td>OAuth2</td>
+        <td>Unknown</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://findstack.com/products/xero/reviews" target="_blank">Source</a> <a href="https://mcpserver.space/mcp/xero-mcp-server/" target="_blank">Source</a> <a href="https://www.appypieautomate.ai/integrate/apps/xero/integrations/zoho-books" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Finance &amp; Payments"
+        data-search="brex finance &amp; payments brex is an all-in-one financial platform providing corporate cards, expense management, bill pay, and banking services for startups and enterprises [1][2].">
+        <td>88</td>
+        <td><strong>Brex</strong></td>
+        <td>Finance &amp; Payments</td>
+        <td>Brex is an all-in-one financial platform providing corporate cards, expense management, bill pay, and banking services for startups and enterprises [1][2].</td>
+        <td>Unknown</td>
+        <td>Unknown</td>
+        <td>REST, CLI, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://clirank.dev/apis/finance-and-payments/brex-api" target="_blank">Source</a> <a href="https://www.bycard.com/vcc/3-amazing-brex-alternatives-for-spend-management-and-payments/" target="_blank">Source</a> <a href="https://www.mcpgrade.com/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Finance &amp; Payments"
+        data-search="ramp finance &amp; payments ramp is a spend management platform that provides corporate cards, accounts payable automation, and expense management tools for finance teams [1][2].">
+        <td>89</td>
+        <td><strong>Ramp</strong></td>
+        <td>Finance &amp; Payments</td>
+        <td>Ramp is a spend management platform that provides corporate cards, accounts payable automation, and expense management tools for finance teams [1][2].</td>
+        <td>OAuth 2.0, API key</td>
+        <td>Contact sales</td>
+        <td>REST, SDK, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://clirank.dev/apis/finance-and-payments/ramp-api" target="_blank">Source</a> <a href="https://www.bycard.com/vcc/ramp-credit-card-vs-brex-which-is-a-better-way-to-handle-corporate-spending/" target="_blank">Source</a> <a href="https://agenticskills.io/mcp/ramp" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="Finance &amp; Payments"
+        data-search="pitchbook finance &amp; payments pitchbook is a research platform that provides data, intelligence, and analysis on private capital markets, including venture capital, private equity, and m&amp;a [1][2].">
+        <td>90</td>
+        <td><strong>PitchBook</strong></td>
+        <td>Finance &amp; Payments</td>
+        <td>PitchBook is a research platform that provides data, intelligence, and analysis on private capital markets, including venture capital, private equity, and M&amp;A [1][2].</td>
+        <td>Unknown</td>
+        <td>Unknown</td>
+        <td>MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://stockevents.app/en/stock/MORN" target="_blank">Source</a> <a href="https://whatlaunched.today/en/blog/uncovering-fintech-startups-disruptors-in-financial-technology" target="_blank">Source</a> <a href="https://pitchbook.com/news/reports/q4-2022-supply-chain-tech-report" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="AI &amp; Knowledge Tools"
+        data-search="notebooklm ai &amp; knowledge tools notebooklm is a google-powered research and note-taking assistant that allows users to ground ai responses in uploaded documents [1].">
+        <td>91</td>
+        <td><strong>NotebookLM</strong></td>
+        <td>AI &amp; Knowledge Tools</td>
+        <td>NotebookLM is a Google-powered research and note-taking assistant that allows users to ground AI responses in uploaded documents [1].</td>
+        <td>Unknown</td>
+        <td>Unknown</td>
+        <td>SDK, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.linkedin.com/posts/gaidukovych_the-reality-of-modern-marketing-operations-activity-7395192318670299136-lgC2" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="AI &amp; Knowledge Tools"
+        data-search="otter ai ai &amp; knowledge tools otter.ai is an ai-powered meeting assistant that provides automated transcription, meeting summaries, and action items [1].">
+        <td>92</td>
+        <td><strong>Otter AI</strong></td>
+        <td>AI &amp; Knowledge Tools</td>
+        <td>Otter.ai is an AI-powered meeting assistant that provides automated transcription, meeting summaries, and action items [1].</td>
+        <td>Bearer Token, Bearer</td>
+        <td>Enterprise only</td>
+        <td>REST, CLI, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API" target="_blank">Source</a> <a href="https://www.scalekit.com/blog/otter-mcp-vs-api" target="_blank">Source</a> <a href="https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="AI &amp; Knowledge Tools"
+        data-search="fathom ai &amp; knowledge tools fathom is an ai-powered meeting notetaker that captures, transcribes, and summarizes conversations for team collaboration and crm integration [1][2].">
+        <td>93</td>
+        <td><strong>Fathom</strong></td>
+        <td>AI &amp; Knowledge Tools</td>
+        <td>Fathom is an AI-powered meeting notetaker that captures, transcribes, and summarizes conversations for team collaboration and CRM integration [1][2].</td>
+        <td>Bearer Token, Bearer</td>
+        <td>Self-serve trial</td>
+        <td>MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://www.fathom.ai/" target="_blank">Source</a> <a href="https://chromewebstore.google.com/detail/fathom-ai-note-taker-for/nhocmlminaplaendbabmoemehbpgdemn" target="_blank">Source</a> <a href="https://help.fathom.video/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="AI &amp; Knowledge Tools"
+        data-search="consensus ai &amp; knowledge tools consensus is an ai-powered academic search engine that synthesizes peer-reviewed literature into evidence-based responses [1][2].">
+        <td>94</td>
+        <td><strong>Consensus</strong></td>
+        <td>AI &amp; Knowledge Tools</td>
+        <td>Consensus is an AI-powered academic search engine that synthesizes peer-reviewed literature into evidence-based responses [1][2].</td>
+        <td>API key</td>
+        <td>Paid plan required</td>
+        <td>REST, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://consensus.app/search/" target="_blank">Source</a> <a href="https://help.consensus.app/en/articles/9922673-how-consensus-works" target="_blank">Source</a> <a href="https://consensus.app/home/api/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="AI &amp; Knowledge Tools"
+        data-search="reducto ai &amp; knowledge tools reducto is an agentic document platform for ai teams that provides tools for parsing, classification, extraction, splitting, and editing documents [1][2].">
+        <td>95</td>
+        <td><strong>Reducto</strong></td>
+        <td>AI &amp; Knowledge Tools</td>
+        <td>Reducto is an agentic document platform for AI teams that provides tools for parsing, classification, extraction, splitting, and editing documents [1][2].</td>
+        <td>Bearer Token, Bearer</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, CLI, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://docs.reducto.ai/overview" target="_blank">Source</a> <a href="https://reducto.ai/" target="_blank">Source</a> <a href="https://reducto.ai/developers" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="AI &amp; Knowledge Tools"
+        data-search="devin ai &amp; knowledge tools devin is an autonomous ai software engineer that can write, run, and test code, and it’s available via the devin api.">
+        <td>96</td>
+        <td><strong>Devin</strong></td>
+        <td>AI &amp; Knowledge Tools</td>
+        <td>Devin is an autonomous AI software engineer that can write, run, and test code, and it’s available via the Devin API.</td>
+        <td>API key, Bearer Token, Bearer</td>
+        <td>Self-serve free</td>
+        <td>REST, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://docs.devin.ai/get-started/devin-intro?_rsc=qmHBtjuNvZ6vapxv" target="_blank">Source</a> <a href="https://docs.devin.ai/api-reference/authentication" target="_blank">Source</a> <a href="https://docs.devin.ai/api-reference/getting-started/teams-quickstart" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="AI &amp; Knowledge Tools"
+        data-search="higgsfield ai &amp; knowledge tools higgsfield is a generative media platform that enables the creation of images, videos, audio, and 3d content through a unified api [1].">
+        <td>97</td>
+        <td><strong>higgsfield</strong></td>
+        <td>AI &amp; Knowledge Tools</td>
+        <td>Higgsfield is a generative media platform that enables the creation of images, videos, audio, and 3D content through a unified API [1].</td>
+        <td>Bearer Token, Bearer</td>
+        <td>Self-serve free</td>
+        <td>REST, SDK, webhook, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://docs.higgsfield.ai/docs" target="_blank">Source</a> <a href="https://github.com/higgsfield-ai/higgsfield-js/" target="_blank">Source</a> <a href="https://docs.higgsfield.ai/docs/help/faq" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="AI &amp; Knowledge Tools"
+        data-search="mermaid cli ai &amp; knowledge tools mermaid cli is a command-line interface tool that enables the generation of diagrams and charts from text-based definitions [1].">
+        <td>98</td>
+        <td><strong>Mermaid CLI</strong></td>
+        <td>AI &amp; Knowledge Tools</td>
+        <td>Mermaid CLI is a command-line interface tool that enables the generation of diagrams and charts from text-based definitions [1].</td>
+        <td>Unknown</td>
+        <td>Self-serve free</td>
+        <td>CLI, webhook, MCP</td>
+        <td>No</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://mermaid.js.org/" target="_blank">Source</a> <a href="https://formulae.brew.sh/" target="_blank">Source</a> <a href="https://github.com/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="AI &amp; Knowledge Tools"
+        data-search="youtube transcript ai &amp; knowledge tools youtube transcript is a chrome extension that allows users to extract text transcripts from youtube videos and generate summaries using ai [1].">
+        <td>99</td>
+        <td><strong>YouTube Transcript</strong></td>
+        <td>AI &amp; Knowledge Tools</td>
+        <td>YouTube Transcript is a Chrome extension that allows users to extract text transcripts from YouTube videos and generate summaries using AI [1].</td>
+        <td>Unknown</td>
+        <td>Unknown</td>
+        <td>CLI, MCP</td>
+        <td>Unknown</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://chromewebstore.google.com/detail/youtube-transcript/jgibaoklabopileepldnlkbbcibhbgmd" target="_blank">Source</a> <a href="https://tactiq.io/" target="_blank">Source</a> <a href="https://apify.com/" target="_blank">Source</a></td>
+    </tr>
+    
+    <tr data-category="AI &amp; Knowledge Tools"
+        data-search="grain ai &amp; knowledge tools grain is an ai-powered conversational intelligence platform that records, transcribes, and analyzes meetings to provide insights and crm synchronization [1].">
+        <td>100</td>
+        <td><strong>Grain</strong></td>
+        <td>AI &amp; Knowledge Tools</td>
+        <td>Grain is an AI-powered conversational intelligence platform that records, transcribes, and analyzes meetings to provide insights and CRM synchronization [1].</td>
+        <td>OAuth2</td>
+        <td>Enterprise only</td>
+        <td>REST, webhook, MCP</td>
+        <td>Yes</td>
+        <td>See research evidence; requires verification.</td>
+        <td><a href="https://gtmtools.dev/tools/grain/" target="_blank">Source</a> <a href="https://developers.grain.com/" target="_blank">Source</a> <a href="https://support.grain.com/en/articles/15507288-grain-api" target="_blank">Source</a></td>
+    </tr>
+    
+</tbody>
+
+</table>
+</div>
+
+</div>
+</section>
+
+<footer>
+<div class="container">
+Generated 2026-09-17 01:08
+<br>
+Composio 100-App Research Case Study
+</div>
+</footer>
+
+<script>
+const search = document.getElementById("search");
+const category = document.getElementById("category");
+const rows = Array.from(document.querySelectorAll("#appTable tr"));
+
+function filter() {
+    const q = search.value.toLowerCase();
+    const c = category.value;
+
+    rows.forEach(row => {
+        const text = row.dataset.search || "";
+        const cat = row.dataset.category || "";
+
+        row.style.display =
+            (!q || text.includes(q)) &&
+            (!c || cat === c)
+            ? ""
+            : "none";
+    });
+}
+
+search.addEventListener("input", filter);
+category.addEventListener("change", filter);
+</script>
+
+</body>
+</html>

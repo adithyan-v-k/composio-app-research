@@ -1,0 +1,191 @@
+{
+  "method": {
+    "sample_size": 20,
+    "sampling": "2 apps per category",
+    "random_seed": 42,
+    "verification_type": "human review against first-party documentation",
+    "status": "pending"
+  },
+  "apps": [
+    {
+      "category": "AI & Knowledge Tools",
+      "app": "Otter AI",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+      "notes": "Human verified: official Otter Help page explicitly documents Otter MCP Server."
+    },
+    {
+      "category": "AI & Knowledge Tools",
+      "app": "NotebookLM",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Not confirmed",
+      "evidence_url": "https://blog.google/innovation-and-ai/products/notebooklm/better-research-notebooklm/",
+      "notes": "Human review found no official NotebookLM MCP documentation; MCP support is not confirmed."
+    },
+    {
+      "category": "CRM",
+      "app": "Twenty",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Third-party MCP evidence only",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://twenty.com/",
+      "notes": "Human verification updated: current official Twenty documentation states every Cloud workspace ships with a native MCP server."
+    },
+    {
+      "category": "CRM",
+      "app": "Attio",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Third-party MCP evidence only",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://attio.com/help/reference/attio-ai/attio-mcp",
+      "notes": "Human verified: official Attio documentation explicitly documents Attio MCP."
+    },
+    {
+      "category": "Communication",
+      "app": "Lark/Larksuite",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://open.larksuite.com/",
+      "notes": "Human verified: official Lark Open Platform documentation confirms MCP support."
+    },
+    {
+      "category": "Communication",
+      "app": "Zoho Cliq",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://www.zoho.com/cliq/mcp-server.html",
+      "notes": "Human verified: official Zoho Cliq documentation explicitly documents a Zoho Cliq MCP Server."
+    },
+    {
+      "category": "Customer Support",
+      "app": "Intercom",
+      "automated_mcp": "No",
+      "automated_verification": "Not checked",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://developers.intercom.com/docs/guides/mcp",
+      "notes": "Human verified: official Intercom developer documentation explicitly documents Intercom MCP."
+    },
+    {
+      "category": "Customer Support",
+      "app": "Gorgias",
+      "automated_mcp": "Yes",
+      "automated_verification": "Not checked",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "notes": "Human verified: official Gorgias documentation explicitly documents Gorgias MCP."
+    },
+    {
+      "category": "Developer & Infrastructure",
+      "app": "Vercel",
+      "automated_mcp": "Yes",
+      "automated_verification": "Not checked",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://vercel.com/blog/introducing-vercel-mcp-connect-vercel-to-your-ai-tools",
+      "notes": "Human verified: official Vercel documentation explicitly documents Vercel MCP."
+    },
+    {
+      "category": "Developer & Infrastructure",
+      "app": "Snowflake",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+      "notes": "Human verified: official Snowflake documentation explicitly documents MCP support for Cortex Agents."
+    },
+    {
+      "category": "E-commerce",
+      "app": "Shopify",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://shopify.dev/docs/apps/build/storefront-mcp",
+      "notes": "Human verified: official Shopify developer documentation explicitly documents Storefront MCP."
+    },
+    {
+      "category": "E-commerce",
+      "app": "fanbasis",
+      "automated_mcp": "No",
+      "automated_verification": "Not checked",
+      "human_verified_mcp": "Not confirmed",
+      "evidence_url": "https://www.fanbasis.com/",
+      "notes": "Human review found no official FanBasis MCP documentation; MCP support is not confirmed."
+    },
+    {
+      "category": "Finance & Payments",
+      "app": "Plaid",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://plaid.com/docs/resources/mcp/",
+      "notes": "Human verified: official Plaid documentation explicitly documents Plaid MCP resources."
+    },
+    {
+      "category": "Finance & Payments",
+      "app": "Paygent Connect (NMI-powered)",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://nmi.com/",
+      "notes": "Human verified: official NMI documentation confirms MCP support for the NMI-powered payment platform."
+    },
+    {
+      "category": "Marketing & Advertising",
+      "app": "GoHighLevel",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://help.gohighlevel.com/support/solutions/articles/155000005741",
+      "notes": "Human verified: official GoHighLevel documentation explicitly documents MCP support."
+    },
+    {
+      "category": "Marketing & Advertising",
+      "app": "Threads",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Not confirmed",
+      "evidence_url": "https://developers.facebook.com/docs/threads/",
+      "notes": "Human verification corrected: first-party evidence/search response states Meta does not provide an official MCP server for Threads; available MCP servers are community-developed."
+    },
+    {
+      "category": "Productivity & Project Management",
+      "app": "Harvest",
+      "automated_mcp": "No",
+      "automated_verification": "Not checked",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+      "notes": "Human verification updated: official Harvest support documentation provides a dedicated Harvest MCP page."
+    },
+    {
+      "category": "Productivity & Project Management",
+      "app": "Notion",
+      "automated_mcp": "Yes",
+      "automated_verification": "Not checked",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://www.notion.com/help/notion-mcp",
+      "notes": "Human verified: official Notion documentation explicitly documents Notion MCP."
+    },
+    {
+      "category": "Web Data & Scraping",
+      "app": "Waterfall.io",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Not confirmed",
+      "evidence_url": "https://waterfall.io/",
+      "notes": "Human review found no official Waterfall.io MCP documentation; MCP support is not confirmed."
+    },
+    {
+      "category": "Web Data & Scraping",
+      "app": "MrScraper",
+      "automated_mcp": "Unknown",
+      "automated_verification": "Official MCP evidence found",
+      "human_verified_mcp": "Yes",
+      "evidence_url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+      "notes": "Human verified: official MrScraper documentation explicitly documents the MrScraper MCP server."
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+[
+  {
+    "app": "Otter AI",
+    "mcp_verdict": "No MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://home.otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp",
+      "https://home.otter.ai/blog/otter-mcp-your-meetings-now-power-every-tool-you-use",
+      "https://home.otter.ai/blog/having-generated-1-billion-annual-roi-for-customers-otter-ai-aims-for-complete-meeting-transformation-by-launching-next-gen-enterprise-suite",
+      "https://otter.ai/blog/having-generated-1-billion-annual-roi-for-customers-otter-ai-aims-for-complete-meeting-transformation-by-launching-next-gen-enterprise-suite",
+      "https://otter.ai/blog/your-meeting-data-now-accessible-in-chatgpt",
+      "https://home.otter.ai/pricing",
+      "https://otter.ai/?utm=theseaitools",
+      "https://otter.ai/?gad_campaignid=23428118047",
+      "https://otter.ai/blog/otter-can-now-pull-from-and-send-to-gmail",
+      "https://home.otter.ai/blog/claude-cant-help-with-your-work-if-it-doesnt-know-what-happened-in-your-meetings",
+      "https://home.otter.ai/integrations/collaboration"
+    ]
+  },
+  {
+    "app": "NotebookLM",
+    "mcp_verdict": "Third-party MCP only",
+    "queries_run": 3,
+    "official_evidence_urls": []
+  },
+  {
+    "app": "Twenty",
+    "mcp_verdict": "No MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": []
+  },
+  {
+    "app": "Attio",
+    "mcp_verdict": "Third-party MCP only",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://mcp.attio.com/",
+      "https://docs.attio.com/mcp/overview",
+      "https://attio.com/help/reference/attio-ai/attio-mcp",
+      "https://attio.com/engineering/blog/building-the-attio-mcp-server",
+      "https://attio.com/apps/mcp",
+      "https://attio.com/help/reference/how-to-guides/attio-mcp-prompts-and-best-practices"
+    ]
+  },
+  {
+    "app": "Lark/Larksuite",
+    "mcp_verdict": "Third-party MCP only",
+    "queries_run": 3,
+    "official_evidence_urls": []
+  },
+  {
+    "app": "Zoho Cliq",
+    "mcp_verdict": "No MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+      "https://www.zoho.com/mcp/",
+      "https://www.zoho.com/blog/cliq/zoho-cliq-7-from-hours-to-minutes-with-developer-platform.html",
+      "https://www.zoho.com/workplace/whats-new.html",
+      "https://help.zoho.com/portal/en/kb/mcp/getting-started/articles/zoho-mcp-help-documentation",
+      "https://www.zoho.com/blog/index.php/cliq/ai-that-moves-work-forward-zoho-cliq-7.html",
+      "https://www.zoho.com/cliq/ai.html",
+      "https://www.zoho.com/workdrive/mcp.html",
+      "https://www.zoho.com/cliq/help/platform/configure-zoho-cliq-mcp.html",
+      "https://www.zoho.com/cliq/whats-new.html",
+      "https://www.zoho.com/cliq/help/platform/connect-zoho-cliq-mcp-with-vs-code.html",
+      "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp-tools.html",
+      "https://www.zoho.com/blog/index.php/cliq/ai-workflows-with-zoho-cliq-mcp-platform.html",
+      "https://www.zoho.com/cliq/help/platform/connect-zoho-cliq-mcp-with-windsurf.html"
+    ]
+  },
+  {
+    "app": "Intercom",
+    "mcp_verdict": "Third-party MCP only",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://developers.intercom.com/docs/guides/mcp",
+      "https://www.intercom.com/integrations/connectors/intercom-mcp-server",
+      "https://www.intercom.com/help/en/articles/15481203-fin-agent-api-mcp-server",
+      "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps",
+      "https://www.intercom.com/blog/introducing-model-context-protocol-fin/",
+      "https://developers.intercom.com/llms.txt",
+      "https://www.intercom.com/integrations/connectors/mcp",
+      "https://developers.intercom.com/docs/guides/fin-operator-mcp"
+    ]
+  },
+  {
+    "app": "Gorgias",
+    "mcp_verdict": "Third-party MCP only",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "https://www.gorgias.com/blog/gorgias-mcp",
+      "https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta",
+      "https://community.gorgias.com/c/product-updates/connect-your-ai-assistant-to-gorgias",
+      "https://www.gorgias.com/apps/shopmcp"
+    ]
+  },
+  {
+    "app": "Vercel",
+    "mcp_verdict": "Official MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "https://vercel.com/docs/mcp/deploy-mcp-servers-to-vercel",
+      "https://vercel.com/blog/model-context-protocol-mcp-explained",
+      "https://vercel.com/docs/mcp",
+      "https://vercel.com/kb/guide/mcp-server-chatgpt-connector",
+      "https://vercel.com/templates/ai/model-context-protocol-mcp-with-next-js",
+      "https://vercel.com/docs/agent-resources/vercel-mcp.md",
+      "https://vercel.com/blog/introducing-vercel-mcp-connect-vercel-to-your-ai-tools",
+      "https://vercel.com/docs/cli/mcp",
+      "https://vercel.com/docs/agent-resources/vercel-mcp/tools",
+      "https://examples.vercel.com/docs/agent-resources/vercel-mcp"
+    ]
+  },
+  {
+    "app": "Snowflake",
+    "mcp_verdict": "Official MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+      "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp.md",
+      "https://docs.snowflake.com/en/sql-reference/sql/create-mcp-server",
+      "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp-connectors?wtime=",
+      "https://docs.snowflake.com/En/user-guide/snowflake-cortex/cortex-agents",
+      "https://docs.snowflake.com/en/en/release-notes/2025/other/2025-11-04-cortex-agents-mcp",
+      "https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code-mcp",
+      "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents?wtime=",
+      "https://docs.snowflake.com/en/sql-reference/commands-mcp-server",
+      "https://docs.snowflake.com/en/en/sql-reference/sql/show-mcp-servers",
+      "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-managed-mcp-and-bedrock-agentcore/",
+      "https://docs.snowflake.com/en/developer-guide/native-apps/agents-mcp-servers",
+      "https://docs.snowflake.com/en/user-guide/snowflake-cortex/snowflake-cowork/integrate-tools",
+      "https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code-snowsight/mcp-connectors"
+    ]
+  },
+  {
+    "app": "Shopify",
+    "mcp_verdict": "No MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://shopify.dev/docs/apps/build/storefront-mcp/index",
+      "https://shopify.dev/docs/apps/build/storefront-mcp/build-storefront-ai-agent",
+      "https://community.shopify.dev/t/problems-setting-up-the-local-mcp-server-through-claude-code/29510",
+      "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "https://shopify.dev/docs/apps/build/storefront-mcp",
+      "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "https://shopify.dev/docs/agents/catalog",
+      "https://shopify.dev/docs/agents",
+      "https://shopify.dev/docs/api/web-mcp",
+      "https://shopify.dev/docs/agents/carts-and-checkout/cart-mcp",
+      "https://shopify.dev/docs/agents/carts-and-checkout/checkout-mcp"
+    ]
+  },
+  {
+    "app": "fanbasis",
+    "mcp_verdict": "Official MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://www.fanbasis.com/"
+    ]
+  },
+  {
+    "app": "Plaid",
+    "mcp_verdict": "Official MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://plaid.com/docs/resources/mcp/",
+      "https://plaid.com/docs/resources/mcp/index.html.md",
+      "https://plaid.com/blog/plaid-mcp-ai-assistant-claude/",
+      "https://plaid.com/blog/openai-plaid-mcp/",
+      "https://plaid.com/blog/anthropic-api-mcp/"
+    ]
+  },
+  {
+    "app": "Paygent Connect (NMI-powered)",
+    "mcp_verdict": "Third-party MCP only",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://docs.nmi.com/docs/payment-component",
+      "https://docs.nmi.com/reference/mcp",
+      "https://docs.nmi.com/docs/direct-connect"
+    ]
+  },
+  {
+    "app": "GoHighLevel",
+    "mcp_verdict": "Official MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-use-the-highlevel-mcp-server"
+    ]
+  },
+  {
+    "app": "Threads",
+    "mcp_verdict": "Third-party MCP only",
+    "queries_run": 3,
+    "official_evidence_urls": []
+  },
+  {
+    "app": "Harvest",
+    "mcp_verdict": "Official MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP"
+    ]
+  },
+  {
+    "app": "Notion",
+    "mcp_verdict": "Official MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://developers.notion.com/guides/mcp/overview",
+      "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+      "https://developers.notion.com/guides/mcp/build-mcp-client",
+      "https://www.notion.com/en-gb/help/notion-mcp",
+      "https://www.notion.com/en-gb/blog/notions-hosted-mcp-server-an-inside-look",
+      "https://www.notion.com/help/connect-mcp-servers-to-your-notion-agent",
+      "https://www.notion.com/en-gb/help/mcp-connections-for-custom-agents",
+      "https://developers.notion.com/guides/mcp/mcp-supported-tools",
+      "https://www.notion.com/help/guides/connect-custom-agents-to-mcp-integrations"
+    ]
+  },
+  {
+    "app": "Waterfall.io",
+    "mcp_verdict": "No MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://docs.waterfall.io/llms.txt",
+      "https://docs.waterfall.io/v1/api-keys-create",
+      "https://docs.waterfall.io/v1/prospector-launcher",
+      "https://docs.waterfall.io/v1/api-keys-list",
+      "https://docs.waterfall.io/v1/api-keys-modify",
+      "https://docs.waterfall.io/v1/contact-enrichment-launcher"
+    ]
+  },
+  {
+    "app": "MrScraper",
+    "mcp_verdict": "No MCP support",
+    "queries_run": 3,
+    "official_evidence_urls": [
+      "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+      "https://docs.mrscraper.com/docs/getting-started/overview",
+      "https://docs.mrscraper.com/docs/getting-started/cli",
+      "https://mrscraper.com/mrscraper-vs-scraperapi",
+      "https://docs.mrscraper.com/docs/getting-started/migration-guides",
+      "https://mrscraper.com/mrscraper-vs-scrapingbee",
+      "https://mrscraper.com/web-scraper-api",
+      "https://mrscraper.com/integrations",
+      "https://docs.mrscraper.com/docs/getting-started/billing",
+      "https://docs.mrscraper.com/docs/features/activating-api",
+      "https://docs.mrscraper.com/docs/integrations/langchain",
+      "https://docs.mrscraper.com/docs/integrations/python",
+      "https://docs.mrscraper.com/docs/integrations/clawhub"
+    ]
+  }
+]

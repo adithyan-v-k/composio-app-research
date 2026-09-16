@@ -1,0 +1,71 @@
+{
+  "data": {
+    "answer": "Salesforce provides multiple APIs for data access and integration, primarily using OAuth 2.0 for authentication [1][2][3].\n\nThe REST API allows large-scale operations and integration via standard HTTP methods [4]. The GraphQL API provides a single endpoint for efficient data retrieval, allowing you to introspect the schema and request specific fields [5][6]. Authentication for GraphQL follows the same OAuth patterns used by other REST APIs [1].\n\nSalesforce Hosted MCP Servers enable AI agents to interact with Salesforce data using the Model Context Protocol [7]. Admins can map specific REST endpoints to tools via the API Catalog for use by these agents [8].\n\nDeveloper access is supported through free Salesforce Developer Editions [3]. API availability is governed by an end-of-life policy where versions are generally supported for at least three years post-release [2]. Documentation for all APIs is available through the Salesforce Developers portal [4].",
+    "citations": [
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/platform/graphql/guide/authorization.html",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "Authorization | Get Started | GraphQL API | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/graphql/guide/authorization.html"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/api_rest_eol.htm",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "API End-of-Life Policy | REST API Developer Guide | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/api_rest_eol.htm"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "Quick Start | Connect REST API Developer Guide | Connect REST API Developer Guide | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/apis",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "API Library | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/apis"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/platform/graphql/overview",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "GraphQL API | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/graphql/overview"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/platform/graphql/references/graphql",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "GraphQL API | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/graphql/references/graphql"
+      },
+      {
+        "author": "Salesforce",
+        "id": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+        "title": "Get Started | Hosted MCP Servers | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/api-catalog.html",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "API Catalog | Build Custom MCP Servers | Hosted MCP Servers | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/api-catalog.html"
+      }
+    ]
+  },
+  "error": null,
+  "successful": true
+}

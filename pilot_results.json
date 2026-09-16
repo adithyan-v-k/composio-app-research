@@ -1,0 +1,276 @@
+[
+  {
+    "app": "Salesforce",
+    "successful": true,
+    "answer": "Salesforce is a cloud-based CRM platform that provides comprehensive tools for managing customer data, business logic, and automated workflows [1][2][3].\n\nAPI authentication is handled primarily via OAuth 2.0 with PKCE [1][4][5]. API access is generally not gated; developers can sign up for a free Salesforce Developer Edition to access and test APIs [4]. The API surface includes REST API, GraphQL API, Tooling API, and various specialized Connect APIs [2]. Salesforce officially supports the Model Context Protocol (MCP) through its Hosted MCP Servers feature, which enables AI agents to interact with Salesforce data and logic [1][6].\n\nThe main blocker to building an integration is typically the granularity of the API surface; if internal APIs or custom tools require a specific sequence of multiple calls to be useful, they may perform poorly with AI agents that lack the context to chain them correctly [6].\n\nOfficial resources:\nhttps://developer.salesforce.com/docs/apis [2]\nhttps://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html [1]",
+    "citations": [
+      {
+        "author": "Salesforce",
+        "id": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+        "title": "Get Started | Hosted MCP Servers | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/apis",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "API Library | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/apis"
+      },
+      {
+        "author": "Salesforce",
+        "id": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "Introduction to REST API | REST API Developer Guide | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "Quick Start | Connect REST API Developer Guide | Connect REST API Developer Guide | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/platform/graphql/references/graphql",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "GraphQL API | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/graphql/references/graphql"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/best-practices.html",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "Best Practices | Hosted MCP Servers | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/best-practices.html"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/products-supporting-mcp.html",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "Products Supporting MCP | Get Started | Hosted MCP Servers | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/products-supporting-mcp.html"
+      },
+      {
+        "author": "Salesforce",
+        "favicon": "https://developer.salesforce.com/ns-assets/favicon.ico",
+        "id": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/api-catalog.html",
+        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue",
+        "title": "API Catalog | Build Custom MCP Servers | Hosted MCP Servers | Salesforce Developers",
+        "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/api-catalog.html"
+      }
+    ],
+    "error": null
+  },
+  {
+    "app": "HubSpot",
+    "successful": true,
+    "answer": "HubSpot is a customer platform that provides software, services, and support to help businesses grow [1].\n\nAPI authentication methods include OAuth 2.0 (required for multi-account distribution), static access tokens for private single-account installations, and developer API keys for specific features [2]. Service keys (in beta) are also available for direct REST API access [3].\n\nAPI access is not gated by self-serve; you can create a free developer account to gain immediate access to test portals and public APIs [1]. The API surface includes REST APIs [4], webhooks [4], and a HubSpot CLI for local development [2][4]. Official SDKs are provided for Node.js [2][5].\n\nThe Model Context Protocol (MCP) is officially supported via two distinct servers: a remote server for AI agents to interact with CRM data [6][7] and a local server for agentic development tools to interact with the Developer Platform [6].\n\nThe main challenge when building integrations is the requirement for a hosted OAuth backend service when distributing apps to multiple accounts [2].\n\nOfficial resources: https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview [2], https://developers.hubspot.com/docs/api-reference/latest/overview [8], and https://developers.hubspot.com/ai-tools/mcp [6].",
+    "citations": [
+      {
+        "id": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+        "title": "",
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+      },
+      {
+        "id": "https://developers.hubspot.com/ai-tools/mcp",
+        "image": "https://developers.hubspot.com/hubfs/Developer%20MCP%20LP-base.jpg",
+        "title": "HubSpot MCP Server",
+        "url": "https://developers.hubspot.com/ai-tools/mcp"
+      },
+      {
+        "id": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+        "title": "",
+        "url": "https://developers.hubspot.com/docs/api-reference/latest/overview"
+      },
+      {
+        "id": "https://developers.hubspot.com/developer-platform-basics",
+        "image": "https://developers.hubspot.com/hubfs/Developer%20Platform%20Basics%20%26%20Onboarding%20LP-base.jpg",
+        "title": "Developer Platform Basics & Onboarding",
+        "url": "https://developers.hubspot.com/developer-platform-basics"
+      },
+      {
+        "id": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+        "image": "https://www.hubspot.com/hubfs/Knowledge_Base_2023-24-25/service-keys/create-a-new-account-service-key.png",
+        "title": "Make API requests using a service key (BETA)",
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys"
+      },
+      {
+        "id": "https://developers.hubspot.com/docs/apps/developer-platform/overview.md",
+        "title": "",
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/overview.md"
+      },
+      {
+        "id": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/oauth-quickstart-guide",
+        "image": "https://www.hubspot.com/hubfs/Knowledge_Base_2023/%5BExample%5D%20Install%20Screen.png",
+        "title": "OAuth Quickstart Guide",
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/oauth-quickstart-guide"
+      },
+      {
+        "id": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "title": "",
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"
+      }
+    ],
+    "error": null
+  },
+  {
+    "app": "Slack",
+    "successful": true,
+    "answer": "Slack is a collaboration platform providing messaging, file sharing, and workflow automation. It uses OAuth 2.0 (including confidential OAuth for MCP) and bearer tokens for API authentication [1][2][3]. API access is not self-serve gated in the sense of a manual approval barrier for internal apps, though public distribution requires mandatory review and approval via the Slack Marketplace [4]. Slack supports REST-like Web APIs, Events API, Socket Mode, SDKs (Node.js, etc.), and CLI [5][2][3][6]. MCP is officially supported via the Slack MCP server [1][4]. A primary integration blocker is mandatory Marketplace review for public apps [4]. \n\nOfficial documentation: https://api.slack.com, https://docs.slack.dev [4].",
+    "citations": [
+      {
+        "id": "https://docs.slack.dev/ai/slack-mcp-server",
+        "title": "Slack MCP server overview",
+        "url": "https://docs.slack.dev/ai/slack-mcp-server"
+      },
+      {
+        "id": "https://docs.slack.dev/apis/web-api",
+        "title": "Slack Web API",
+        "url": "https://docs.slack.dev/apis/web-api"
+      },
+      {
+        "id": "https://docs.slack.dev/faq",
+        "title": "",
+        "url": "https://docs.slack.dev/faq"
+      },
+      {
+        "author": "Kathy Lee",
+        "favicon": "https://d34u8crftukxnk.cloudfront.net/slack.dev/local/cropped-slack-favicon.png?w=32",
+        "id": "https://www.slack.dev/secure-data-connectivity-for-the-modern-ai-era/",
+        "image": "https://d34u8crftukxnk.cloudfront.net/slack.dev/local/Slack-Dev-Blog-reduced.jpg",
+        "publishedDate": "2025-05-29T19:47:25.000Z",
+        "title": "Secure Data Connectivity for the Modern AI Era | Slack Developers",
+        "url": "https://www.slack.dev/secure-data-connectivity-for-the-modern-ai-era/"
+      },
+      {
+        "id": "https://docs.slack.dev/apis/",
+        "title": "Slack APIs",
+        "url": "https://docs.slack.dev/apis/"
+      },
+      {
+        "author": "slackapi",
+        "id": "https://github.com/slackapi/node-slack-sdk",
+        "publishedDate": "2014-03-25T00:00:00.000Z",
+        "title": "slackapi/node-slack-sdk",
+        "url": "https://github.com/slackapi/node-slack-sdk"
+      },
+      {
+        "id": "http://docs.slack.dev/reference/methods",
+        "title": "",
+        "url": "http://docs.slack.dev/reference/methods"
+      },
+      {
+        "author": "Slack",
+        "id": "https://slack.com/help/articles/360002079527-A-guide-to-Slacks-Discovery-APIs",
+        "image": "https://a.slack-edge.com/80588/marketing/img/meta/slack_hash_256.png",
+        "title": "A guide to Slack's Discovery APIs | Slack",
+        "url": "https://slack.com/help/articles/360002079527-A-guide-to-Slacks-Discovery-APIs"
+      }
+    ],
+    "error": null
+  },
+  {
+    "app": "GitHub",
+    "successful": true,
+    "answer": "GitHub is a developer platform for version control, collaboration, and workflow automation [1]. \n\nAPI authentication is handled via personal access tokens (classic or fine-grained), GitHub App tokens, or the built-in GITHUB_TOKEN in Actions [2][3]. Basic authentication using a client ID and secret is supported for some app-specific endpoints [2]. API access is not self-serve gated; it is available to users and apps [2][1][4]. The API surface includes REST [1], GraphQL [4], official Octokit SDKs [1], CLI [3], and webhooks [1]. Model Context Protocol (MCP) is officially supported via the GitHub MCP Server [5][6]. Integration blockers typically involve missing required permissions or scope scopes [2][6].\n\nDocumentation: [https://docs.github.com/en/rest](https://docs.github.com/en/rest), [https://docs.github.com/en/graphql](https://docs.github.com/en/graphql), [https://github.com/github/github-mcp-server](https://github.com/github/github-mcp-server) [1][5][4].",
+    "citations": [
+      {
+        "id": "https://docs.github.com/en/graphql",
+        "title": "GitHub GraphQL API documentation",
+        "url": "https://docs.github.com/en/graphql"
+      },
+      {
+        "id": "https://docs.github.com/en/rest?apiVersion=2026-03-10",
+        "title": "GitHub REST API documentation",
+        "url": "https://docs.github.com/en/rest?apiVersion=2026-03-10"
+      },
+      {
+        "id": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10",
+        "title": "Authenticating to the REST API",
+        "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10"
+      },
+      {
+        "id": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?tool=cli",
+        "title": "Getting started with the REST API",
+        "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?tool=cli"
+      },
+      {
+        "id": "https://github.com/github/github-mcp-server?locale=en-US",
+        "title": "github/github-mcp-server",
+        "url": "https://github.com/github/github-mcp-server?locale=en-US"
+      },
+      {
+        "id": "https://github.com/github/github-mcp-server/blob/d0320b870d6a4a090378b4f28bb1f0f1bfe5406e/README.md",
+        "title": "README.md",
+        "url": "https://github.com/github/github-mcp-server/blob/d0320b870d6a4a090378b4f28bb1f0f1bfe5406e/README.md"
+      },
+      {
+        "id": "https://docs.github.com/en/rest/about-the-rest-api/about-the-openapi-description-for-the-rest-api?apiVersion=2026-03-10",
+        "title": "About the OpenAPI description for the REST API",
+        "url": "https://docs.github.com/en/rest/about-the-rest-api/about-the-openapi-description-for-the-rest-api?apiVersion=2026-03-10"
+      },
+      {
+        "id": "https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/api.github.com/api.github.com.yaml",
+        "title": "",
+        "url": "https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/api.github.com/api.github.com.yaml"
+      }
+    ],
+    "error": null
+  },
+  {
+    "app": "Stripe",
+    "successful": true,
+    "answer": "Stripe is a financial infrastructure platform that provides a unified set of APIs for accepting payments, managing billing, and building financial workflows [1]. Authentication is handled via API keys using HTTP Basic Auth or Bearer Token headers [2][3]. API access is self-serve; you can manage keys and interact with sandboxes directly through the dashboard [2][4][3]. The API surface is primarily REST-based, supported by official server-side SDKs, a CLI, and webhooks [1][4][5]. Model Context Protocol (MCP) is officially supported via a dedicated server [6]. Integration complexity primarily involves managing API key security and versioning [2][7][3].\n\nEvidence: [2] [6] [1] [4] [5] [7] [3]",
+    "citations": [
+      {
+        "id": "https://docs.stripe.com/apis?locale=en-GB",
+        "title": "apis?locale=en-GB",
+        "url": "https://docs.stripe.com/apis?locale=en-GB"
+      },
+      {
+        "id": "https://docs.stripe.com/api/authentication?api-version=2026-04-22.dahlia",
+        "title": "Authentication",
+        "url": "https://docs.stripe.com/api/authentication?api-version=2026-04-22.dahlia"
+      },
+      {
+        "id": "https://docs.stripe.com/api/authentication?api-version=2025-03-31.basil",
+        "title": "authentication?api-version=2025-03-31.basil",
+        "url": "https://docs.stripe.com/api/authentication?api-version=2025-03-31.basil"
+      },
+      {
+        "id": "https://docs.stripe.com/api?api-version=2024-12-18.acacia",
+        "title": "api?api-version=2024-12-18.acacia",
+        "url": "https://docs.stripe.com/api?api-version=2024-12-18.acacia"
+      },
+      {
+        "id": "https://docs.stripe.com/get-started/development-environment?lang=go&locale=en-GB",
+        "title": "Set up your development environment",
+        "url": "https://docs.stripe.com/get-started/development-environment?lang=go&locale=en-GB"
+      },
+      {
+        "id": "https://docs.stripe.com/mcp",
+        "title": "Model Context Protocol (MCP)",
+        "url": "https://docs.stripe.com/mcp"
+      },
+      {
+        "id": "https://docs.stripe.com/api-v2-overview.md?api-version=2024-09-30.acacia",
+        "title": "api-v2-overview.md?api-version=2024-09-30.acacia",
+        "url": "https://docs.stripe.com/api-v2-overview.md?api-version=2024-09-30.acacia"
+      },
+      {
+        "favicon": "https://b.stripecdn.com/docs-statics-srv/assets/de2c5759f9d0c4faed776e94d1c3c32f.svg",
+        "id": "https://docs.stripe.com/api?lang=go",
+        "title": "Stripe API Reference",
+        "url": "https://docs.stripe.com/api?lang=go"
+      }
+    ],
+    "error": null
+  }
+]

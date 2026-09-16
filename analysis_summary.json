@@ -1,0 +1,52 @@
+{
+  "total_apps": 100,
+  "categories": {
+    "CRM": 10,
+    "Customer Support": 10,
+    "Communication": 10,
+    "Marketing & Advertising": 10,
+    "E-commerce": 10,
+    "Web Data & Scraping": 10,
+    "Developer & Infrastructure": 10,
+    "Productivity & Project Management": 10,
+    "Finance & Payments": 10,
+    "AI & Knowledge Tools": 10
+  },
+  "access_model": {
+    "Unknown": 25,
+    "Self-serve free": 43,
+    "Paid plan required": 14,
+    "Self-serve trial": 8,
+    "Enterprise only": 5,
+    "Admin approval": 2,
+    "Partner approval": 2,
+    "Contact sales": 1
+  },
+  "authentication": {
+    "OAuth2": 18,
+    "OAuth 2.0": 28,
+    "API key": 39,
+    "Bearer Token": 21,
+    "Bearer": 24,
+    "Basic Auth": 9,
+    "Unknown": 18,
+    "JWT": 3,
+    "HMAC": 1
+  },
+  "api_surface": {
+    "REST": 88,
+    "CLI": 44,
+    "MCP": 99,
+    "GraphQL": 16,
+    "SDK": 54,
+    "webhook": 55
+  },
+  "mcp": {
+    "Yes": 24,
+    "Unknown": 61,
+    "No": 15
+  },
+  "buildability": {
+    "See research evidence; requires verification.": 100
+  }
+}
